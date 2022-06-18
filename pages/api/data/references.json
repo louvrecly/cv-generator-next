@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "key": "linkedin",
+      "label": "LinkedIn",
+      "value": "https://www.linkedin.com/in/username",
+      "link": "https://www.linkedin.com/in/username"
+    },
+    {
+      "key": "github",
+      "label": "GitHub",
+      "value": "https://github.com/username",
+      "link": "https://github.com/username"
+    },
+    {
+      "key": "gitlab",
+      "label": "GitLab",
+      "value": "https://gitlab.com/username",
+      "link": "https://gitlab.com/username"
+    }
+  ]
+}

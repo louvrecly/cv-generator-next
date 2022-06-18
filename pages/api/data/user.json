@@ -3,22 +3,5 @@
   "contact": {
     "mobile": "+0 (000) 000 0000",
     "email": "username@gmail.com"
-  },
-  "references": [
-    {
-      "key": "linkedin",
-      "label": "LinkedIn",
-      "link": "https://www.linkedin.com/in/username"
-    },
-    {
-      "key": "github",
-      "label": "GitHub",
-      "link": "https://github.com/username"
-    },
-    {
-      "key": "gitlab",
-      "label": "GitLab",
-      "link": "https://gitlab.com/username"
-    }
-  ]
+  }
 }
