@@ -1,5 +1,5 @@
-import DefaultLayout from 'layouts/default'
-import '../styles/globals.css'
+import DefaultLayout from 'components/layouts/default'
+import 'styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return (
