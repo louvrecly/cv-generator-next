@@ -6,6 +6,11 @@
   },
   "references": [
     {
+      "key": "linkedin",
+      "label": "LinkedIn",
+      "link": "https://www.linkedin.com/in/username"
+    },
+    {
       "key": "github",
       "label": "GitHub",
       "link": "https://github.com/username"
