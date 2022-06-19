@@ -1,7 +1,7 @@
 {
   "name": "User Name",
-  "contact": {
-    "mobile": "+0 (000) 000 0000",
-    "email": "username@gmail.com"
-  }
+  "contacts": [
+    { "key": "mobile", "label": "Mobile", "value": "+0 (000) 000 0000" },
+    { "key": "email", "label": "Email", "value": "username@gmail.com" }
+  ]
 }
