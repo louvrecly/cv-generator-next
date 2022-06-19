@@ -3,18 +3,21 @@
     {
       "key": "linkedin",
       "label": "LinkedIn",
+      "show": true,
       "value": "https://www.linkedin.com/in/username",
       "link": "https://www.linkedin.com/in/username"
     },
     {
       "key": "github",
       "label": "GitHub",
+      "show": true,
       "value": "https://github.com/username",
       "link": "https://github.com/username"
     },
     {
       "key": "gitlab",
       "label": "GitLab",
+      "show": true,
       "value": "https://gitlab.com/username",
       "link": "https://gitlab.com/username"
     }
