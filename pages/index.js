@@ -1,5 +1,6 @@
 import useSWR from 'swr'
 import UserInfoBar from 'components/UserInfoBar'
+import ReferencesSection from 'components/ReferencesSection'
 
 const fetcher = (...args) => fetch(...args).then(res => res.json())
 
@@ -25,7 +26,7 @@ export default function Home() {
             ? <p>Failed to Load Data</p>
             : !referencesRes.data
             ? <p>Loading...</p>
-            : JSON.stringify(referencesRes.data)
+            : <ReferencesSection references={referencesRes.data.references} />
         }
       </div>
     </div>
