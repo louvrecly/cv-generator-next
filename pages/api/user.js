@@ -1,5 +1,8 @@
 import user from './data/user.json'
+import { filterByShow } from './utils'
 
 export default function handler(req, res) {
-  res.status(200).json({ user })
+  const filteredUser = filterByShow(user)
+
+  res.status(200).json({ user: filteredUser })
 }
