@@ -1,0 +1,142 @@
+[
+  {
+    "key": "programming",
+    "label": "Programming",
+    "show": true,
+    "groups": [
+      {
+        "key": "languages",
+        "label": "Languages",
+        "show": true,
+        "items": [
+          { "key": "js", "label": "JavaScript", "show": true },
+          { "key": "ts", "label": "TypeScript", "show": true },
+          { "key": "py", "label": "Python", "show": true },
+          { "key": "sql", "label": "SQL", "show": true },
+          { "key": "dart", "label": "Dart", "show": true },
+          { "key": "r", "label": "R", "show": true }
+        ]
+      },
+      {
+        "key": "frontend",
+        "label": "Frontend",
+        "show": true,
+        "items": [
+          { "key": "vue", "label": "Vue.js", "show": true },
+          { "key": "react", "label": "React.js", "show": true },
+          { "key": "redux", "label": "Redux", "show": true },
+          { "key": "html", "label": "HTML", "show": true },
+          { "key": "css", "label": "CSS", "show": true },
+          { "key": "flask", "label": "Flask", "show": true },
+          { "key": "flutter", "label": "Flutter", "show": true }
+        ]
+      },
+      {
+        "key": "backend",
+        "label": "Backend",
+        "show": true,
+        "items": [
+          { "key": "nodejs", "label": "Node.js", "show": true },
+          { "key": "express", "label": "Express.js", "show": true },
+          { "key": "firebase", "label": "Firebase", "show": true },
+          { "key": "mongodb", "label": "MongoDB", "show": true },
+          { "key": "redis", "label": "Redis", "show": true },
+          { "key": "postgreSQL", "label": "PostgreSQL", "show": true },
+          { "key": "knex.js", "label": "Knex.js", "show": true }
+        ]
+      },
+      {
+        "key": "devops",
+        "label": "Devops",
+        "show": true,
+        "items": [
+          { "key": "gcp", "label": "Google Cloud Platform (GCP)", "show": true },
+          { "key": "aws", "label": "Amazon Web Services (AWS)", "show": true },
+          { "key": "jest", "label": "Jest", "show": true },
+          { "key": "gitlab-cicd", "label": "GitLab CICD", "show": true },
+          { "key": "redis", "label": "Redis", "show": true },
+          { "key": "postgreSQL", "label": "PostgreSQL", "show": true },
+          { "key": "knex.js", "label": "Knex.js", "show": true }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "computer",
+    "label": "Computer",
+    "show": true,
+    "groups": [
+      {
+        "key": "documenting",
+        "label": "Documenting",
+        "show": true,
+        "items": [
+          { "key": "ms-accdb", "label": "MicroSoft Access (VBA)", "show": true },
+          { "key": "ms-xlsx", "label": "MicroSoft Excel (VBA)", "show": true },
+          { "key": "ms-docx", "label": "MicroSoft Word", "show": true },
+          { "key": "ms-ppt", "label": "MicroSoft PowerPoint", "show": true }
+        ]
+      },
+      {
+        "key": "design",
+        "label": "Design",
+        "show": true,
+        "items": [
+          { "key": "adobe-ps", "label": "Adobe Photoshop", "show": true },
+          { "key": "adobe-il", "label": "Adobe Illustrator", "show": true }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "language",
+    "label": "Language",
+    "show": true,
+    "groups": [
+      {
+        "key": "written",
+        "label": "Written",
+        "show": true,
+        "items": [
+          { "key": "chi", "label": "Chinese", "show": true },
+          { "key": "eng", "label": "English", "show": true }
+        ]
+      },
+      {
+        "key": "spoken",
+        "label": "Spoken",
+        "show": true,
+        "items": [
+          { "key": "zh", "label": "Cantonese", "show": true },
+          { "key": "eng", "label": "English", "show": true },
+          { "key": "cn", "label": "Mandarin", "show": true }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "others",
+    "label": "Others",
+    "show": true,
+    "groups": [
+      {
+        "key": "stem",
+        "label": "STEM Education",
+        "show": true,
+        "items": [
+          { "key": "scratch", "label": "Scratch", "show": true },
+          { "key": "geogebra", "label": "GeoGebra", "show": true },
+          { "key": "ev3", "label": "LEGO Mindstorms EV3", "show": true }
+        ]
+      },
+      {
+        "key": "e-commerce",
+        "label": "e-Commerce",
+        "show": false,
+        "items": [
+          { "key": "shopify", "label": "Shopify", "show": true }
+        ]
+      }
+    ]
+  }
+]
