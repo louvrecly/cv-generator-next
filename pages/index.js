@@ -1,4 +1,5 @@
 import useSWR from 'swr'
+import UserInfoBar from 'components/UserInfoBar'
 
 const fetcher = (...args) => fetch(...args).then(res => res.json())
 
@@ -14,7 +15,7 @@ export default function Home() {
             ? <p>Failed to Load Data</p>
             : !userRes.data
             ? <p>Loading...</p>
-            : JSON.stringify(userRes.data)
+            : <UserInfoBar user={userRes.data.user} />
         }
       </div>
 
