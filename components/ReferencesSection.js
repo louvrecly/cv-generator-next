@@ -1,9 +1,9 @@
+import Section from './Section'
+
 export default function ReferencesSection({ references }) {
   return (
-    <section className="py-1">
-      <h2 className="text-base uppercase underline">References</h2>
-
-      <ul>
+    <Section title="References">
+      <ul className="py-1">
         {references.items.map(item => (
           <li key={item.key} className="py-0.5 w-full flex flex-wrap justify-between gap-x-2 text-xs">
             <span>{item.label}:</span>
@@ -15,6 +15,6 @@ export default function ReferencesSection({ references }) {
           </li>
         ))}
       </ul>
-    </section>
+    </Section>
   )
 }

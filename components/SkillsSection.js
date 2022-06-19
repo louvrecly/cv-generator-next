@@ -1,8 +1,8 @@
+import Section from './Section'
+
 export default function SkillsSection({ skills }) {
   return (
-    <section className="py-1">
-      <h2 className="text-base uppercase underline">Skills</h2>
-
+    <Section title="Skills">
       <ul>
         {skills.categories.map(category => (
           <li key={category.key} className="py-1">
@@ -24,6 +24,6 @@ export default function SkillsSection({ skills }) {
           </li>
         ))}
       </ul>
-    </section>
+    </Section>
   )
 }
