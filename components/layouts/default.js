@@ -10,7 +10,7 @@ export default function DefaultLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="h-full">{children}</div>
+      <main>{children}</main>
     </>
   )
 }
