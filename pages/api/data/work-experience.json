@@ -1,0 +1,61 @@
+{
+  "companies": [
+    {
+      "key": "company-1",
+      "name": "Company 1",
+      "show": true,
+      "positions": [
+        {
+          "key": "company-1_title-a",
+          "title": "Title A",
+          "show": true,
+          "type": "Full-Time",
+          "period": {
+            "start": "Jan 1, 2021",
+            "end": "Present"
+          },
+          "items": [
+            "Led something big",
+            "Achieved something incredible",
+            "Enhanced something by certain %"
+          ]
+        },
+        {
+          "key": "company-1_title-b",
+          "title": "Title B",
+          "show": true,
+          "type": "Full-Time",
+          "period": {
+            "start": "Jun 1, 2020",
+            "end": "Dec 31, 2020"
+          },
+          "items": [
+            "Done something amazing",
+            "Helped someone in something"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "company-2",
+      "name": "Company 2",
+      "show": true,
+      "positions": [
+        {
+          "key": "company-2_title-c",
+          "title": "Title C",
+          "show": true,
+          "type": "Part-Time",
+          "period": {
+            "start": "Mar 1, 2010",
+            "end": "Sep 30, 2020"
+          },
+          "items": [
+            "Organized something new",
+            "Managed something big"
+          ]
+        }
+      ]
+    }
+  ]
+}
