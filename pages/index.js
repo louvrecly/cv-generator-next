@@ -3,6 +3,7 @@ import UserInfoBar from 'components/UserInfoBar'
 import ReferencesSection from 'components/ReferencesSection'
 import SkillsSection from 'components/SkillsSection'
 import WorkExperienceSection from 'components/WorkExperienceSection'
+import EducationSection from 'components/EducationSection'
 
 const fetcher = (...args) => fetch(...args).then(res => res.json())
 
@@ -11,6 +12,7 @@ export default function Home() {
   const referencesRes = useSWR('api/references', fetcher)
   const skillsRes = useSWR('api/skills', fetcher)
   const workExperienceRes = useSWR('api/work-experience', fetcher)
+  const educationRes = useSWR('api/education', fetcher)
 
   return (
     <div className="mx-8 py-12 h-full max-w-screen-sm break-words md:mx-auto lg:max-w-[960px]">
@@ -45,6 +47,13 @@ export default function Home() {
             : !workExperienceRes.data
             ? <p>Loading...</p>
             : <WorkExperienceSection workExperience={workExperienceRes.data.workExperience} />
+        }
+        {
+          educationRes.error
+            ? <p>Failed to Load Data</p>
+            : !educationRes.data
+            ? <p>Loading...</p>
+            : <EducationSection education={educationRes.data.education} />
         }
       </div>
     </div>
