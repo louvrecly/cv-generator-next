@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import useSWR from 'swr'
 import UserInfoBar from 'components/UserInfoBar'
 import ReferencesSection from 'components/ReferencesSection'
@@ -5,56 +6,37 @@ import SkillsSection from 'components/SkillsSection'
 import WorkExperienceSection from 'components/WorkExperienceSection'
 import EducationSection from 'components/EducationSection'
 
-const fetcher = (...args) => fetch(...args).then(res => res.json())
+const fetchAndSet = (setter, key) => (...args) =>
+  fetch(...args)
+    .then(res => res.json())
+    .then(json => setter(json[key]))
+    .catch(error => console.log({ error }))
 
 export default function Home() {
-  const userRes = useSWR('api/user', fetcher)
-  const referencesRes = useSWR('api/references', fetcher)
-  const skillsRes = useSWR('api/skills', fetcher)
-  const workExperienceRes = useSWR('api/work-experience', fetcher)
-  const educationRes = useSWR('api/education', fetcher)
+  const [user, setUser] = useState(null)
+  const [references, setReferences] = useState(null)
+  const [skills, setSkills] = useState(null)
+  const [workExperience, setWorkExperience] = useState(null)
+  const [education, setEducation] = useState(null)
+
+  useSWR('api/user', fetchAndSet(setUser, 'user'))
+  useSWR('api/references', fetchAndSet(setReferences, 'references'))
+  useSWR('api/skills', fetchAndSet(setSkills, 'skills'))
+  useSWR('api/work-experience', fetchAndSet(setWorkExperience, 'workExperience'))
+  useSWR('api/education', fetchAndSet(setEducation, 'education'))
 
   return (
     <div className="mx-8 py-12 h-full max-w-screen-sm break-words md:mx-auto lg:max-w-[960px]">
-      <>
-        {
-          userRes.error
-            ? <p>Failed to Load Data</p>
-            : !userRes.data
-            ? <p>Loading...</p>
-            : <UserInfoBar user={userRes.data.user} />
-        }
-      </>
+      <UserInfoBar user={user} />
 
       <div>
-        {
-          referencesRes.error
-            ? <p>Failed to Load Data</p>
-            : !referencesRes.data
-            ? <p>Loading...</p>
-            : <ReferencesSection references={referencesRes.data.references} />
-        }
-        {
-          skillsRes.error
-            ? <p>Failed to Load Data</p>
-            : !skillsRes.data
-            ? <p>Loading...</p>
-            : <SkillsSection skills={skillsRes.data.skills} />
-        }
-        {
-          workExperienceRes.error
-            ? <p>Failed to Load Data</p>
-            : !workExperienceRes.data
-            ? <p>Loading...</p>
-            : <WorkExperienceSection workExperience={workExperienceRes.data.workExperience} />
-        }
-        {
-          educationRes.error
-            ? <p>Failed to Load Data</p>
-            : !educationRes.data
-            ? <p>Loading...</p>
-            : <EducationSection education={educationRes.data.education} />
-        }
+        <ReferencesSection references={references} />
+
+        <SkillsSection skills={skills} />
+
+        <WorkExperienceSection workExperience={workExperience} />
+
+        <EducationSection education={education} />
       </div>
     </div>
   )
