@@ -1,6 +1,8 @@
 import Section from './Section'
 
 export default function EducationSection({ education }) {
+  if (!education) return <p>Loading education data...</p>
+
   return (
     <Section title="Education">
       <ul>

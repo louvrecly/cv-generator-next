@@ -1,6 +1,8 @@
 import Section from './Section'
 
 export default function ReferencesSection({ references }) {
+  if (!references) return <p>Loading references data...</p>
+
   return (
     <Section title="References">
       <ul className="py-1">

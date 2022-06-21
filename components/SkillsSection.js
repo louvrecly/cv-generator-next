@@ -1,6 +1,8 @@
 import Section from './Section'
 
 export default function SkillsSection({ skills }) {
+  if (!skills) return <p>Loading skills data...</p>
+
   return (
     <Section title="Skills">
       <ul>

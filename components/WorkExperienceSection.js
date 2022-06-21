@@ -1,6 +1,8 @@
 import Section from './Section'
 
 export default function WorkExperienceSection({ workExperience }) {
+  if (!workExperience) return <p>Loading work experience data...</p>
+
   return (
     <Section title="Work Experience">
       <ul>
