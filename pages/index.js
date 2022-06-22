@@ -26,10 +26,10 @@ export default function Home() {
   useSWR('api/education', fetchAndSet(setEducation, 'education'))
 
   return (
-    <div className="mx-8 py-12 h-full md:mx-auto md:max-w-screen-sm lg:mx-auto lg:px-60 lg:max-w-screen-2xl">
+    <div className="mx-8 py-8 h-full md:h-[1485px] md:flex md:flex-col md:overflow-hidden">
       <UserInfoBar user={user} />
 
-      <div>
+      <div className="md:flex-1 md:flex md:flex-col md:flex-wrap md:gap-x-3 md:overflow-scroll">
         <ReferencesSection references={references} />
 
         <SkillsSection skills={skills} />
