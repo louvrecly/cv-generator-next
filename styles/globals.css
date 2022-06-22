@@ -18,3 +18,87 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.c-button {
+  padding: 4px 12px;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  transition: all 0.3s ease;
+}
+
+.c-button:hover {
+  transform: translateY(-2px);
+}
+
+.c-button:active {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.c-button--neutral {
+  background-color: hsl(0, 0%, 45%);
+  color: rgb(255, 255, 255);
+}
+
+.c-button--neutral:hover {
+  background-color: hsla(0, 0%, 45%, 0.9);
+}
+
+.c-button--neutral:active {
+  background-color: hsl(0, 0%, 40%);
+}
+
+.c-button--red {
+  background-color: hsl(0, 70%, 35%);
+  color: rgb(255, 255, 255);
+}
+
+.c-button--red:hover {
+  background-color: hsla(0, 70%, 35%, 0.9);
+}
+
+.c-button--red:active {
+  background-color: hsl(0, 70%, 30%);
+}
+
+.c-button--green {
+  background-color: hsl(142, 72%, 29%);
+  color: rgb(255, 255, 255);
+}
+
+.c-button--green:hover {
+  background-color: hsla(142, 72%, 29%, 0.9);
+}
+
+.c-button--green:active {
+  background-color: hsl(142, 72%, 24%);
+}
+
+.c-glass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.c-glass:hover .c-glass__screen {
+  opacity: 0.5;
+  filter: blur(4px);
+}
+
+.c-glass:hover .c-glass__button {
+  opacity: 1;
+}
+
+.c-glass__screen {
+  width: 100%;
+  opacity: 1;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.c-glass__button {
+  position: absolute;
+  opacity: 0;
+}
