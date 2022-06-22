@@ -26,7 +26,7 @@ export default function Home() {
   useSWR('api/education', fetchAndSet(setEducation, 'education'))
 
   return (
-    <div className="mx-8 py-12 h-full max-w-screen-sm break-words md:mx-auto lg:max-w-[960px]">
+    <div className="mx-8 py-12 h-full md:mx-auto md:max-w-screen-sm lg:mx-auto lg:px-60 lg:max-w-screen-2xl">
       <UserInfoBar user={user} />
 
       <div>

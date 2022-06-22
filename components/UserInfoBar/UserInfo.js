@@ -1,6 +1,6 @@
 export default function UserInfo({ data }) {
   return (
-    <div className="flex flex-wrap justify-stretch items-center gap-x-3">
+    <div className="w-full flex flex-wrap justify-stretch items-center gap-x-3">
       <h1 className="flex-1 text-xl uppercase whitespace-nowrap">{data.name}</h1>
 
       {data.contacts && (
