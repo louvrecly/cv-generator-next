@@ -6,7 +6,7 @@ export default function SkillsSection({ skills, setSkills }) {
   return (
     <Section title="Skills">
       <EditableBlock data={skills} setData={setSkills} placeholder="Loading skills data...">
-        <SkillsTable />
+        <SkillsTable data={skills} />
       </EditableBlock>
     </Section>
   )

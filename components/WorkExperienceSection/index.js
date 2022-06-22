@@ -6,7 +6,7 @@ export default function WorkExperienceSection({ workExperience, setWorkExperienc
   return (
     <Section title="Work Experience">
       <EditableBlock data={workExperience} setData={setWorkExperience} placeholder="Loading work experience data...">
-        <WorkExperienceTable />
+        <WorkExperienceTable data={workExperience} />
       </EditableBlock>
     </Section>
   )

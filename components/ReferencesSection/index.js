@@ -6,7 +6,7 @@ export default function ReferencesSection({ references, setReferences }) {
   return (
     <Section title="References">
       <EditableBlock data={references} setData={setReferences} placeholder="Loading references data...">
-        <ReferencesTable />
+        <ReferencesTable data={references} />
       </EditableBlock>
     </Section>
   )

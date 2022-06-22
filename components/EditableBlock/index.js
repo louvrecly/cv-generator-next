@@ -40,16 +40,7 @@ export default function EditableBlock({ children, data, setData, placeholder = '
               />
             : (
               <div className="c-glass">
-                <div className="c-glass__screen">
-                  {
-                    React.Children.map(
-                      children,
-                      child => React.isValidElement(child)
-                        ? React.cloneElement(child, { data })
-                        : child
-                      )
-                  }
-                </div>
+                <div className="c-glass__screen">{children}</div>
 
                 <button
                   className="c-button c-button--neutral c-glass__button"

@@ -6,7 +6,7 @@ export default function EducationSection({ education, setEducation }) {
   return (
     <Section title="Education">
       <EditableBlock data={education} setData={setEducation} placeholder="Loading education data...">
-        <EducationTable />
+        <EducationTable data={education} />
       </EditableBlock>
     </Section>
   )
