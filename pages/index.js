@@ -5,12 +5,7 @@ import ReferencesSection from 'components/ReferencesSection'
 import SkillsSection from 'components/SkillsSection'
 import WorkExperienceSection from 'components/WorkExperienceSection'
 import EducationSection from 'components/EducationSection'
-
-const fetchAndSet = (setter, key) => (...args) =>
-  fetch(...args)
-    .then(res => res.json())
-    .then(json => json[key] && setter(json[key]))
-    .catch(error => console.log({ error }))
+import { fetchAndSet } from 'services/utils'
 
 export default function Home() {
   const [user, setUser] = useState(null)
