@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react'
 
-export default function LoadingPlaceholder({ children, data, placeholder = 'Loading data...' }) {
+export default function LoadingPlaceholder({ children, data, setData, placeholder = 'Loading data...' }) {
   const [editing, setEditing] = useState(false)
   const [value, setValue] = useState(JSON.stringify(data))
-  const [dataModel, setDataModel] = useState(data)
 
   useEffect(() => {
     setValue(JSON.stringify(data))
-    setDataModel(data)
   }, [data])
 
   const handleInput = e => setValue(e.target.value)
@@ -17,7 +15,7 @@ export default function LoadingPlaceholder({ children, data, placeholder = 'Load
 
     try {
       const json = JSON.parse(e.target.data.value)
-      setDataModel(json)
+      setData(json)
 
       setEditing(false)
     } catch (error) {
@@ -28,7 +26,7 @@ export default function LoadingPlaceholder({ children, data, placeholder = 'Load
   return (
     <>
       {
-        !dataModel
+        !data
           ? <p>{placeholder}</p>
           : editing
             ? (
@@ -48,7 +46,7 @@ export default function LoadingPlaceholder({ children, data, placeholder = 'Load
                     React.Children.map(
                       children,
                       child => React.isValidElement(child)
-                        ? React.cloneElement(child, { data: dataModel })
+                        ? React.cloneElement(child, { data })
                         : child
                       )
                   }

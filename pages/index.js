@@ -27,16 +27,16 @@ export default function Home() {
 
   return (
     <div className="mx-8 py-8 h-full md:h-[1485px] md:flex md:flex-col md:overflow-hidden">
-      <UserInfoBar user={user} />
+      <UserInfoBar user={user} setUser={setUser} />
 
       <div className="md:flex-1 md:flex md:flex-col md:flex-wrap md:gap-x-3 md:overflow-scroll">
-        <ReferencesSection references={references} />
+        <ReferencesSection references={references} setReferences={setReferences} />
 
-        <SkillsSection skills={skills} />
+        <SkillsSection skills={skills} setSkills={setSkills} />
 
-        <WorkExperienceSection workExperience={workExperience} />
+        <WorkExperienceSection workExperience={workExperience} setWorkExperience={setWorkExperience} />
 
-        <EducationSection education={education} />
+        <EducationSection education={education} setEducation={setEducation} />
       </div>
     </div>
   )
