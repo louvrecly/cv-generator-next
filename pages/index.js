@@ -9,7 +9,7 @@ import EducationSection from 'components/EducationSection'
 const fetchAndSet = (setter, key) => (...args) =>
   fetch(...args)
     .then(res => res.json())
-    .then(json => setter(json[key]))
+    .then(json => json[key] && setter(json[key]))
     .catch(error => console.log({ error }))
 
 export default function Home() {
