@@ -8,3 +8,10 @@ export function filterByShow(items) {
       {}
     )
 }
+
+export function fetchAndSet(setter, key) {
+  return (...args) => fetch(...args)
+    .then(res => res.json())
+    .then(json => json[key] && setter(json[key]))
+    .catch(error => alert`Error - ${error.message}`)
+}

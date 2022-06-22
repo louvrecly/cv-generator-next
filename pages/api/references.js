@@ -1,5 +1,5 @@
 import references from './data/references.json'
-import { filterByShow } from './utils'
+import { filterByShow } from 'services/utils'
 
 export default function handler(req, res) {
   const filteredReferences = filterByShow(references)
