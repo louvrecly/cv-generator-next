@@ -84,8 +84,7 @@ a {
 }
 
 .c-window:hover .c-window__glass {
-  opacity: 0.5;
-  filter: blur(4px);
+  filter: brightness(0.9);
 }
 
 .c-window:hover .c-window__button {
@@ -94,8 +93,8 @@ a {
 
 .c-window__glass {
   width: 100%;
-  opacity: 1;
-  transition: filter 0.3s ease, opacity 0.3s ease;
+  background-color: hsl(0, 0%, 100%);
+  transition: filter 0.3s ease;
 }
 
 .c-window__button {
