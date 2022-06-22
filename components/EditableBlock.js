@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-export default function LoadingPlaceholder({ children, data, setData, placeholder = 'Loading data...' }) {
+export default function EditableBlock({ children, data, setData, placeholder = 'Loading data...' }) {
   const [editing, setEditing] = useState(false)
   const [value, setValue] = useState(JSON.stringify(data))
 
