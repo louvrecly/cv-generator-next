@@ -14,8 +14,8 @@
             { "key": "ts", "label": "TypeScript", "show": true },
             { "key": "py", "label": "Python", "show": true },
             { "key": "sql", "label": "SQL", "show": true },
-            { "key": "dart", "label": "Dart", "show": true },
-            { "key": "r", "label": "R", "show": true }
+            { "key": "r", "label": "R", "show": false },
+            { "key": "dart", "label": "Dart", "show": false }
           ]
         },
         {
@@ -43,21 +43,18 @@
             { "key": "mongodb", "label": "MongoDB", "show": true },
             { "key": "redis", "label": "Redis", "show": true },
             { "key": "postgreSQL", "label": "PostgreSQL", "show": true },
+            { "key": "jest", "label": "Jest", "show": true },
             { "key": "knex.js", "label": "Knex.js", "show": true }
           ]
         },
         {
           "key": "devops",
-          "label": "Devops",
+          "label": "DevOps",
           "show": true,
           "items": [
-            { "key": "gcp", "label": "Google Cloud Platform (GCP)", "show": true },
-            { "key": "aws", "label": "Amazon Web Services (AWS)", "show": true },
-            { "key": "jest", "label": "Jest", "show": true },
             { "key": "gitlab-cicd", "label": "GitLab CICD", "show": true },
-            { "key": "redis", "label": "Redis", "show": true },
-            { "key": "postgreSQL", "label": "PostgreSQL", "show": true },
-            { "key": "knex.js", "label": "Knex.js", "show": true }
+            { "key": "gcp", "label": "Google Cloud Platform (GCP)", "show": true },
+            { "key": "aws", "label": "Amazon Web Services (AWS)", "show": true }
           ]
         }
       ]
