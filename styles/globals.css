@@ -76,29 +76,29 @@ a {
   background-color: hsl(142, 72%, 24%);
 }
 
-.c-glass {
+.c-window {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 
-.c-glass:hover .c-glass__screen {
+.c-window:hover .c-window__glass {
   opacity: 0.5;
   filter: blur(4px);
 }
 
-.c-glass:hover .c-glass__button {
+.c-window:hover .c-window__button {
   opacity: 1;
 }
 
-.c-glass__screen {
+.c-window__glass {
   width: 100%;
   opacity: 1;
   transition: filter 0.3s ease, opacity 0.3s ease;
 }
 
-.c-glass__button {
+.c-window__button {
   position: absolute;
   opacity: 0;
 }
