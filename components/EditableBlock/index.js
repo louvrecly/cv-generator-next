@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import DataForm from './DataForm'
 
 export default function EditableBlock({ children, data, setData, placeholder = 'Loading data...' }) {
   const [editing, setEditing] = useState(false)
@@ -23,22 +24,20 @@ export default function EditableBlock({ children, data, setData, placeholder = '
     }
   }
 
+  const handleCancel = () => setEditing(false)
+
   return (
     <>
       {
         !data
           ? <p>{placeholder}</p>
           : editing
-            ? (
-              <form className="py-1" onSubmit={handleSubmit}>
-                <textarea name="data" className="px-3 py-2 w-full text-xs border border-neutral-300 rounded" placeholder="Input JSON here..." rows="6" defaultValue={value} onChange={handleInput} />
-
-                <div className="py-1 flex justify-center gap-x-3">
-                  <button className="c-button c-button--green" type="submit">Submit</button>
-                  <button className="c-button c-button--red" onClick={() => setEditing(false)}>Cancel</button>
-                </div>
-              </form>
-            )
+            ? <DataForm
+                defaultValue={value}
+                handleInput={handleInput}
+                handleSubmit={handleSubmit}
+                handleCancel={handleCancel}
+              />
             : (
               <div className="c-glass">
                 <div className="c-glass__screen">
@@ -52,7 +51,10 @@ export default function EditableBlock({ children, data, setData, placeholder = '
                   }
                 </div>
 
-                <button className="c-button c-button--neutral c-glass__button" onClick={() => setEditing(true)}>Edit</button>
+                <button
+                  className="c-button c-button--neutral c-glass__button"
+                  onClick={() => setEditing(true)}
+                >Edit</button>
               </div>
             )
       }
