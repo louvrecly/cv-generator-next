@@ -1,12 +1,16 @@
-import { createContext, useState, useContext } from 'react'
-import useSWR from 'swr'
-import { fetchAndSet } from 'services/utils'
+import { createContext, useState, useEffect, useContext } from 'react'
 
 const Context = createContext()
 
 export function EducationProvider({ children }) {
   const [education, setEducation] = useState(null)
-  useSWR('api/education', fetchAndSet(setEducation, 'education'))
+
+  useEffect(() => {
+    fetch('api/education')
+      .then(res => res.json())
+      .then(data => data.education && setEducation(data.education))
+      .catch(error => alert(`Error - ${error.message}`))
+  }, [])
 
   return <Context.Provider value={[education, setEducation]}>{children}</Context.Provider>
 }

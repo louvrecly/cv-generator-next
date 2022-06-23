@@ -1,12 +1,16 @@
-import { createContext, useState, useContext } from 'react'
-import useSWR from 'swr'
-import { fetchAndSet } from 'services/utils'
+import { createContext, useState, useEffect, useContext } from 'react'
 
 const Context = createContext()
 
 export function ReferencesProvider({ children }) {
   const [references, setReferences] = useState(null)
-  useSWR('api/references', fetchAndSet(setReferences, 'references'))
+
+  useEffect(() => {
+    fetch('api/references')
+      .then(res => res.json())
+      .then(data => data.references && setReferences(data.references))
+      .catch(error => alert(`Error - ${error.message}`))
+  }, [])
 
   return <Context.Provider value={[references, setReferences]}>{children}</Context.Provider>
 }

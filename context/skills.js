@@ -1,12 +1,16 @@
-import { createContext, useState, useContext } from 'react'
-import useSWR from 'swr'
-import { fetchAndSet } from 'services/utils'
+import { createContext, useState, useEffect, useContext } from 'react'
 
 const Context = createContext()
 
 export function SkillsProvider({ children }) {
   const [skills, setSkills] = useState(null)
-  useSWR('api/skills', fetchAndSet(setSkills, 'skills'))
+
+  useEffect(() => {
+    fetch('api/skills')
+      .then(res => res.json())
+      .then(data => data.skills && setSkills(data.skills))
+      .catch(error => alert(`Error - ${error.message}`))
+  }, [])
 
   return <Context.Provider value={[skills, setSkills]}>{children}</Context.Provider>
 }
