@@ -8,7 +8,7 @@ export default function SkillsTable({ data }) {
           <ul>
             {category.groups.map(group => (
               <li key={group.key}>
-                <h4 className="py-1 text-neutral-700 text-xs italic border-b border-neutral-700">{group.label}</h4>
+                <h4 className="py-0.5 text-neutral-700 text-sm italic border-b">{group.label}</h4>
 
                 <ul className="py-1 flex-1 flex flex-wrap gap-1 text-xs">
                   {group.items.map(item => (
