@@ -56,6 +56,62 @@
           ]
         }
       ]
+    },
+    {
+      "key": "company-3",
+      "name": "Company 3",
+      "show": true,
+      "positions": [
+        {
+          "key": "company-3_title-d",
+          "title": "Title D",
+          "show": true,
+          "type": "Summer-Intern",
+          "period": {
+            "start": "Jul 1, 2010",
+            "end": "Aug 30, 2020"
+          },
+          "items": [
+            "Done something good",
+            "Trained someone"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "company-4",
+      "name": "Company 4",
+      "show": true,
+      "positions": [
+        {
+          "key": "company-4_title-e",
+          "title": "Title E",
+          "show": true,
+          "type": "Part-Time",
+          "period": {
+            "start": "Feb 15, 2009",
+            "end": "May 30, 2009"
+          },
+          "items": [
+            "Maintained something for a certain time",
+            "Improved something"
+          ]
+        },
+        {
+          "key": "company-4_title-f",
+          "title": "Title F",
+          "show": true,
+          "type": "Part-Time",
+          "period": {
+            "start": "Jan 10, 2009",
+            "end": "Feb 14, 2009"
+          },
+          "items": [
+            "Helped someone",
+            "Provided something good"
+          ]
+        }
+      ]
     }
   ]
 }
