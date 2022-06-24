@@ -1,5 +1,5 @@
 export function filterByShow(items) {
-  return typeof items !== 'object'
+  return !items || typeof items !== 'object'
     ? items
     : Array.isArray(items)
     ? items.filter(item => typeof item !== 'object' || item.show).map(filterByShow)
