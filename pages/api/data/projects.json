@@ -1,0 +1,80 @@
+{
+  "activities": [
+    {
+      "key": "project-a",
+      "name": "PROJECT A",
+      "show": true,
+      "link": "https://www.google.com/",
+      "type": "Work Project",
+      "description": "Some cool project",
+      "period": {
+        "start": "Nov 22, 2021",
+        "end": "Present"
+      },
+      "items": [
+        "Create something amazing",
+        "Improve part of the project"
+      ]
+    },
+    {
+      "key": "project-b",
+      "name": "Project B",
+      "show": true,
+      "link": "https://www.youtube.com/",
+      "type": "Personal Project",
+      "description": "Some Nice side project",
+      "period": {
+        "start": "Feb 2, 2010",
+        "end": "May 5, 2010"
+      },
+      "items": [
+        "Made an interesting thing that help someone in something"
+      ]
+    },
+    {
+      "key": "project-c",
+      "name": "Project C",
+      "show": true,
+      "link": "https://www.netflix.com/",
+      "type": "Personal Project",
+      "description": "Some standard project created",
+      "period": {
+        "start": "Sep 20, 2019",
+        "end": "Nov 1, 2019"
+      },
+      "items": [
+        "Constructed something for someone"
+      ]
+    },
+    {
+      "key": "project-d",
+      "name": "Project D",
+      "show": true,
+      "link": "https://www.instagram.com/",
+      "type": "Voluntary Work",
+      "description": "Helper in some events",
+      "period": {
+        "start": "Mar 9, 2018",
+        "end": "Jul 19, 2018"
+      },
+      "items": [
+        "Assisted in something meaningful"
+      ]
+    },
+    {
+      "key": "project-e",
+      "name": "Project E",
+      "show": true,
+      "link": "https://www.facebook.com/",
+      "type": "Extra-Curricular",
+      "description": "Something leisure",
+      "period": {
+        "start": "Dec 18, 2016",
+        "end": "Jan 31, 2016"
+      },
+      "items": [
+        "Joined something interesting"
+      ]
+    }
+  ]
+}
