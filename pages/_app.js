@@ -3,6 +3,7 @@ import { ReferencesProvider } from 'context/references'
 import { SkillsProvider } from 'context/skills'
 import { WorkExperienceProvider } from 'context/workExperience'
 import { EducationProvider } from 'context/education'
+import { ProjectsProvider } from 'context/projects'
 import DefaultLayout from 'components/layouts/default'
 import 'styles/globals.css'
 
@@ -13,9 +14,11 @@ function MyApp({ Component, pageProps }) {
         <SkillsProvider>
           <WorkExperienceProvider>
             <EducationProvider>
-              <DefaultLayout>
-                <Component {...pageProps} />
-              </DefaultLayout>
+              <ProjectsProvider>
+                <DefaultLayout>
+                  <Component {...pageProps} />
+                </DefaultLayout>
+              </ProjectsProvider>
             </EducationProvider>
           </WorkExperienceProvider>
         </SkillsProvider>
