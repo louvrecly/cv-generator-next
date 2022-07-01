@@ -1,29 +1,27 @@
-import { UserProvider } from 'context/user'
-import { ReferencesProvider } from 'context/references'
-import { SkillsProvider } from 'context/skills'
-import { WorkExperienceProvider } from 'context/workExperience'
-import { EducationProvider } from 'context/education'
-import { ProjectsProvider } from 'context/projects'
+import { useState } from 'react'
+import DataContext from 'context/data'
 import DefaultLayout from 'components/layouts/default'
 import 'styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
+  const [user, setUser] = useState()
+  const [references, setReferences] = useState()
+  const [skills, setSkills] = useState()
+  const [education, setEducation] = useState()
+  const [workExperience, setWorkExperience] = useState()
+  const [projects, setProjects] = useState()
+
+  const value = {
+    state: { user, references, skills, education, workExperience, projects },
+    setters: { setUser, setReferences, setSkills, setEducation, setWorkExperience, setProjects }
+  }
+
   return (
-    <UserProvider>
-      <ReferencesProvider>
-        <SkillsProvider>
-          <WorkExperienceProvider>
-            <EducationProvider>
-              <ProjectsProvider>
-                <DefaultLayout>
-                  <Component {...pageProps} />
-                </DefaultLayout>
-              </ProjectsProvider>
-            </EducationProvider>
-          </WorkExperienceProvider>
-        </SkillsProvider>
-      </ReferencesProvider>
-    </UserProvider>
+    <DataContext.Provider value={value}>
+      <DefaultLayout>
+        <Component {...pageProps} />
+      </DefaultLayout>
+    </DataContext.Provider>
   )
 }
 
