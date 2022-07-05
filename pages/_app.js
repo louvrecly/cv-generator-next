@@ -10,10 +10,11 @@ function MyApp({ Component, pageProps }) {
   const [education, setEducation] = useState(null)
   const [workExperience, setWorkExperience] = useState(null)
   const [portfolio, setPortfolio] = useState(null)
+  const [activities, setActivities] = useState(null)
 
   const value = {
-    state: { user, references, skills, education, workExperience, portfolio },
-    setters: { setUser, setReferences, setSkills, setEducation, setWorkExperience, setPortfolio }
+    state: { user, references, skills, education, workExperience, portfolio, activities },
+    setters: { setUser, setReferences, setSkills, setEducation, setWorkExperience, setPortfolio, setActivities }
   }
 
   return (
