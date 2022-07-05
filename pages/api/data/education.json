@@ -18,16 +18,8 @@
         }
       ],
       "achievements": [
-        {
-          "key": "institution-1_achievement_certificate-a",
-          "name": "Certificate A",
-          "show": true
-        },
-        {
-          "key": "institution-1_achievement_certificate-b",
-          "name": "Certificate B",
-          "show": true
-        }
+        "Certificate A",
+        "Certificate B"
       ]
     },
     {
@@ -48,16 +40,8 @@
         }
       ],
       "achievements": [
-        {
-          "key": "institution-2_achievement_certificate-c",
-          "name": "Certificate C",
-          "show": true
-        },
-        {
-          "key": "institution-2_achievement_certificate-d",
-          "name": "Certificate D",
-          "show": true
-        }
+        "Certificate C",
+        "Certificate D"
       ]
     },
     {
@@ -78,11 +62,7 @@
         }
       ],
       "achievements": [
-        {
-          "key": "institution-3_achievement_certificate-e",
-          "name": "Certificate E",
-          "show": true
-        }
+        "Certificate E"
       ]
     },
     {
@@ -103,11 +83,7 @@
         }
       ],
       "achievements": [
-        {
-          "key": "institution-4_achievement_certificate-f",
-          "name": "Certificate F",
-          "show": true
-        }
+        "Certificate F"
       ]
     }
   ]
