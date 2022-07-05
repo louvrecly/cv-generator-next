@@ -1,0 +1,69 @@
+{
+  "activities": [
+    {
+      "key": "activity-a",
+      "name": "Activity A",
+      "show": true,
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Gold_Star.svg/1024px-Gold_Star.svg.png",
+      "link": "https://open.spotify.com/",
+      "type": "Work Activity",
+      "description": "Some cool activity",
+      "period": {
+        "start": "Nov 22, 2021",
+        "end": "Present"
+      },
+      "items": [
+        "Create something amazing",
+        "Improve part of the activity"
+      ]
+    },
+    {
+      "key": "activity-b",
+      "name": "Activity B",
+      "show": true,
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Gold_Star.svg/1024px-Gold_Star.svg.png",
+      "link": "https://open.spotify.com/",
+      "type": "Personal Activity",
+      "description": "Some nice activity",
+      "period": {
+        "start": "Feb 2, 2010",
+        "end": "May 5, 2010"
+      },
+      "items": [
+        "Made an interesting thing that help someone in something"
+      ]
+    },
+    {
+      "key": "activity-c",
+      "name": "Activity C",
+      "show": true,
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Gold_Star.svg/1024px-Gold_Star.svg.png",
+      "link": "https://open.spotify.com/",
+      "type": "Voluntary Work",
+      "description": "Helper in some events",
+      "period": {
+        "start": "Mar 9, 2018",
+        "end": "Jul 19, 2018"
+      },
+      "items": [
+        "Assisted in something meaningful"
+      ]
+    },
+    {
+      "key": "activity-d",
+      "name": "Activity D",
+      "show": true,
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Gold_Star.svg/1024px-Gold_Star.svg.png",
+      "link": "https://open.spotify.com/",
+      "type": "Extra-Curricular",
+      "description": "Something leisure",
+      "period": {
+        "start": "Dec 18, 2016",
+        "end": "Jan 31, 2016"
+      },
+      "items": [
+        "Joined something interesting"
+      ]
+    }
+  ]
+}
