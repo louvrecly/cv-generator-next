@@ -1,9 +1,14 @@
+import Image from 'next/image';
+
 export default function WorkExperienceTable({ data }) {
   return (
     <ul>
       {data.companies.map(company => (
         <li key={company.key} className="py-1">
-          <h3 className="font-bold text-sm">{company.name}</h3>
+          <div className="flex items-center gap-2">
+            {company.logo && <Image className="w-full h-auto" src={company.logo} alt={company.name} width={20} height={20} />}
+            <h3 className="font-bold text-sm">{company.name}</h3>
+          </div>
 
           <ul>
             {company.positions.map(position => (
