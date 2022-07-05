@@ -6,11 +6,12 @@ import SkillsSection from 'components/SkillsSection'
 import EducationSection from 'components/EducationSection'
 import WorkExperienceSection from 'components/WorkExperienceSection'
 import PortfolioSection from 'components/PortfolioSection'
+import ActivitiesSection from 'components/ActivitiesSection'
 
 export default function Home() {
   const { state, setters } = useContext(DataContext)
-  const { user, references, skills, education, workExperience, portfolio } = state
-  const { setUser, setReferences, setSkills, setEducation, setWorkExperience, setPortfolio } = setters
+  const { user, references, skills, education, workExperience, portfolio, activities } = state
+  const { setUser, setReferences, setSkills, setEducation, setWorkExperience, setPortfolio, setActivities } = setters
 
   useEffect(() => {
     const payloads = [
@@ -19,7 +20,8 @@ export default function Home() {
       { endpoint: 'skills', field: 'skills', setter: setSkills },
       { endpoint: 'education', field: 'education', setter: setEducation },
       { endpoint: 'work-experience', field: 'workExperience', setter: setWorkExperience },
-      { endpoint: 'portfolio', field: 'portfolio', setter: setPortfolio }
+      { endpoint: 'portfolio', field: 'portfolio', setter: setPortfolio },
+      { endpoint: 'activities', field: 'activities', setter: setActivities }
     ]
 
     Promise.all(
@@ -31,7 +33,7 @@ export default function Home() {
             .catch(error => `Error - ${error.message}`)
       )
     )
-  }, [setEducation, setPortfolio, setReferences, setSkills, setUser, setWorkExperience])
+  }, [setUser, setReferences, setSkills, setEducation, setWorkExperience, setPortfolio, setActivities])
 
   return (
     <div className="mx-8 py-8 h-full md:h-[1485px] md:flex md:flex-col md:overflow-hidden">
@@ -47,6 +49,8 @@ export default function Home() {
         <WorkExperienceSection workExperience={workExperience} setWorkExperience={setWorkExperience} />
 
         <PortfolioSection portfolio={portfolio} setPortfolio={setPortfolio} />
+
+        <ActivitiesSection activities={activities} setActivities={setActivities} />
       </div>
     </div>
   )
