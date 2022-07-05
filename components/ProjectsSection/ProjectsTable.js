@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import TitleRow from 'components/Table/TitleRow'
 
 export default function EducationTable({ data }) {
   return (
@@ -9,16 +9,12 @@ export default function EducationTable({ data }) {
             activity.link
               ? (
                 <a href={activity.link} target="_blank" rel="noreferrer">
-                  <div className="flex items-center gap-2">
-                    {activity.logo && <Image src={activity.logo} alt={activity.name} width={15} height={15} />}
-                    <h3 className="font-bold text-sm">{activity.name}</h3>
-                  </div>
+                  <TitleRow title={activity.name} logo={activity.logo} />
                 </a>
               )
               : (
                 <div className="flex items-center gap-2">
-                  {activity.logo && <Image src={activity.logo} alt={activity.name} width={15} height={15} />}
-                  <h3 className="font-bold text-sm">{activity.name}</h3>
+                  <TitleRow title={activity.name} logo={activity.logo} />
                 </div>
               )
           }

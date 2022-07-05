@@ -1,9 +1,11 @@
+import TitleRow from 'components/Table/TitleRow'
+
 export default function SkillsTable({ data }) {
   return (
     <ul>
       {data.categories.map(category => (
         <li key={category.key} className="py-1">
-          <h3 className="font-bold text-sm">{category.label}</h3>
+          <TitleRow title={category.label} />
 
           <ul>
             {category.groups.map(group => (

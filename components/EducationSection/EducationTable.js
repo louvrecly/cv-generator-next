@@ -1,14 +1,11 @@
-import Image from 'next/image'
+import TitleRow from 'components/Table/TitleRow'
 
 export default function EducationTable({ data }) {
   return (
     <ul>
       {data.institutions.map(institution => (
         <li key={institution.key} className="py-1">
-          <div className="flex items-center gap-2">
-            {institution.logo && <Image src={institution.logo} alt={institution.name} width={15} height={15} />}
-            <h3 className="font-bold text-sm">{institution.name}</h3>
-          </div>
+          <TitleRow title={institution.name} logo={institution.logo} />
 
           <ul>
             {institution.courses.map(course => (

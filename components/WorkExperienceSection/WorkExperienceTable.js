@@ -1,14 +1,11 @@
-import Image from 'next/image';
+import TitleRow from 'components/Table/TitleRow'
 
 export default function WorkExperienceTable({ data }) {
   return (
     <ul>
       {data.companies.map(company => (
         <li key={company.key} className="py-1">
-          <div className="flex items-center gap-2">
-            {company.logo && <Image src={company.logo} alt={company.name} width={15} height={15} />}
-            <h3 className="font-bold text-sm">{company.name}</h3>
-          </div>
+          <TitleRow title={company.name} logo={company.logo} />
 
           <ul>
             {company.positions.map(position => (
