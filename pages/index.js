@@ -31,7 +31,7 @@ export default function Home() {
             .catch(error => `Error - ${error.message}`)
       )
     )
-  }, [])
+  }, [setEducation, setProjects, setReferences, setSkills, setUser, setWorkExperience])
 
   return (
     <div className="mx-8 py-8 h-full md:h-[1485px] md:flex md:flex-col md:overflow-hidden">
