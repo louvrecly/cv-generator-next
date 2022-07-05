@@ -7,7 +7,12 @@ const nextConfig = {
       'openseauserdata.com',
       'images.vexels.com',
       'media-exp1.licdn.com',
-      'pigeoncity.com.hk'
+      'scontent.xx.fbcdn.net',
+      'pigeoncity.com.hk',
+      'sas.sph.hku.hk',
+      'images.squarespace-cdn.com',
+      'www.hk-matrix.com',
+      'pbs.twimg.com'
     ]
   }
 }
