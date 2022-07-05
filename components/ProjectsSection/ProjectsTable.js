@@ -1,5 +1,6 @@
 import TitleRow from 'components/Table/TitleRow'
 import InfoRow from 'components/Table/InfoRow'
+import ItemsList from 'components/Table/ItemsList'
 
 export default function EducationTable({ data }) {
   return (
@@ -25,11 +26,7 @@ export default function EducationTable({ data }) {
             tailText={`${activity.period.start} - ${activity.period.end}`}
           />
 
-          <ul className="py-0.5">
-            {activity.items.map((item, idx) => (
-              <li key={idx} className="py-0.5 text-xs">{item}</li>
-            ))}
-          </ul>
+          <ItemsList items={activity.items} />
         </li>
       ))}
     </ul>

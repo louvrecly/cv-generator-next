@@ -1,5 +1,6 @@
 import TitleRow from 'components/Table/TitleRow'
 import InfoRow from 'components/Table/InfoRow'
+import ItemsList from 'components/Table/ItemsList'
 
 export default function EducationTable({ data }) {
   return (
@@ -19,11 +20,7 @@ export default function EducationTable({ data }) {
             ))}
           </ul>
 
-          <ul className="py-0.5">
-            {institution.achievements.map(achievement => (
-              <li key={achievement.key} className="py-0.5 text-xs">{achievement.name}</li>
-            ))}
-          </ul>
+          <ItemsList items={institution.achievements} />
         </li>
       ))}
     </ul>

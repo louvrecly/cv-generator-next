@@ -1,5 +1,6 @@
 import TitleRow from 'components/Table/TitleRow'
 import InfoRow from 'components/Table/InfoRow'
+import ItemsList from 'components/Table/ItemsList'
 
 export default function WorkExperienceTable({ data }) {
   return (
@@ -16,9 +17,7 @@ export default function WorkExperienceTable({ data }) {
                   tailText={`${position.period.start} - ${position.period.end}`}
                 />
 
-                <ul className="py-0.5 text-xs">
-                  {position.items.map((item, idx) => <li key={idx} className="py-0.5">{item}</li>)}
-                </ul>
+                <ItemsList items={position.items} />
               </li>
             ))}
           </ul>
