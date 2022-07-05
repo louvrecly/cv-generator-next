@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function EducationTable({ data }) {
   return (
     <ul>
@@ -5,8 +7,20 @@ export default function EducationTable({ data }) {
         <li key={activity.key} className="py-1">
           {
             activity.link
-              ? <a href={activity.link} target="_blank" rel="noreferrer"><h3 className="font-bold text-sm">{activity.name}</h3></a>
-              : <h3 className="font-bold text-sm">{activity.name}</h3>
+              ? (
+                <a href={activity.link} target="_blank" rel="noreferrer">
+                  <div className="flex items-center gap-2">
+                    {activity.logo && <Image className="w-full h-auto" src={activity.logo} alt={activity.name} width={20} height={20} />}
+                    <h3 className="font-bold text-sm">{activity.name}</h3>
+                  </div>
+                </a>
+              )
+              : (
+                <div className="flex items-center gap-2">
+                  {activity.logo && <Image className="w-full h-auto" src={activity.logo} alt={activity.name} width={20} height={20} />}
+                  <h3 className="font-bold text-sm">{activity.name}</h3>
+                </div>
+              )
           }
 
           <h4 className="py-1 flex flex-wrap justify-between gap-x-3 items-center text-neutral-700 italic border-b">
