@@ -1,4 +1,5 @@
 import TitleRow from 'components/Table/TitleRow'
+import InfoRow from 'components/Table/InfoRow'
 
 export default function SkillsTable({ data }) {
   return (
@@ -10,7 +11,7 @@ export default function SkillsTable({ data }) {
           <ul>
             {category.groups.map(group => (
               <li key={group.key}>
-                <h4 className="py-0.5 text-neutral-700 text-sm italic border-b">{group.label}</h4>
+                <InfoRow headText={group.label} />
 
                 <ul className="py-1 flex-1 flex flex-wrap gap-1 text-xs">
                   {group.items.map(item => (

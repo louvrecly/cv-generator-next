@@ -1,4 +1,5 @@
 import TitleRow from 'components/Table/TitleRow'
+import InfoRow from 'components/Table/InfoRow'
 
 export default function EducationTable({ data }) {
   return (
@@ -19,10 +20,10 @@ export default function EducationTable({ data }) {
               )
           }
 
-          <h4 className="py-1 flex flex-wrap justify-between gap-x-3 items-center text-neutral-700 italic border-b">
-            <span className="text-sm">{activity.description} · {activity.type}</span>
-            <span className="text-neutral-500 text-xs text-end">{activity.period.start} - {activity.period.end}</span>
-          </h4>
+          <InfoRow
+            headText={`${activity.description} · ${activity.type}`}
+            tailText={`${activity.period.start} - ${activity.period.end}`}
+          />
 
           <ul className="py-0.5">
             {activity.items.map((item, idx) => (

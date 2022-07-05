@@ -1,4 +1,5 @@
 import TitleRow from 'components/Table/TitleRow'
+import InfoRow from 'components/Table/InfoRow'
 
 export default function WorkExperienceTable({ data }) {
   return (
@@ -10,10 +11,10 @@ export default function WorkExperienceTable({ data }) {
           <ul>
             {company.positions.map(position => (
               <li key={position.key}>
-                <h4 className="py-1 flex flex-wrap justify-between gap-x-3 items-center text-neutral-700 italic border-b">
-                  <span className="text-sm">{position.title} · {position.type}</span>
-                  <span className="text-neutral-500 text-xs text-end">{position.period.start} - {position.period.end}</span>
-                </h4>
+                <InfoRow
+                  headText={`${position.title} · ${position.type}`}
+                  tailText={`${position.period.start} - ${position.period.end}`}
+                />
 
                 <ul className="py-0.5 text-xs">
                   {position.items.map((item, idx) => <li key={idx} className="py-0.5">{item}</li>)}

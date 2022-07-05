@@ -1,4 +1,5 @@
 import TitleRow from 'components/Table/TitleRow'
+import InfoRow from 'components/Table/InfoRow'
 
 export default function EducationTable({ data }) {
   return (
@@ -10,10 +11,10 @@ export default function EducationTable({ data }) {
           <ul>
             {institution.courses.map(course => (
               <li key={course.key}>
-                <h4 className="py-1 flex flex-wrap justify-between gap-x-3 items-center text-neutral-700 italic border-b">
-                  <span className="text-sm">{course.name} · {course.type}</span>
-                  <span className="text-neutral-500 text-xs text-end">{course.period.start} - {course.period.end}</span>
-                </h4>
+                <InfoRow
+                  headText={`${course.name} · ${course.type}`}
+                  tailText={`${course.period.start} - ${course.period.end}`}
+                />
               </li>
             ))}
           </ul>
