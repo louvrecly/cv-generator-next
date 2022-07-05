@@ -1,9 +1,14 @@
+import Image from 'next/image'
+
 export default function EducationTable({ data }) {
   return (
     <ul>
       {data.institutions.map(institution => (
         <li key={institution.key} className="py-1">
-          <h3 className="font-bold text-sm">{institution.name}</h3>
+          <div className="flex items-center gap-2">
+            {institution.logo && <Image className="w-full h-auto" src={institution.logo} alt={institution.name} width={20} height={20} />}
+            <h3 className="font-bold text-sm">{institution.name}</h3>
+          </div>
 
           <ul>
             {institution.courses.map(course => (
