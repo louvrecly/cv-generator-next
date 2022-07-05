@@ -4,12 +4,12 @@ import DefaultLayout from 'components/layouts/default'
 import 'styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
-  const [user, setUser] = useState()
-  const [references, setReferences] = useState()
-  const [skills, setSkills] = useState()
-  const [education, setEducation] = useState()
-  const [workExperience, setWorkExperience] = useState()
-  const [portfolio, setPortfolio] = useState()
+  const [user, setUser] = useState(null)
+  const [references, setReferences] = useState(null)
+  const [skills, setSkills] = useState(null)
+  const [education, setEducation] = useState(null)
+  const [workExperience, setWorkExperience] = useState(null)
+  const [portfolio, setPortfolio] = useState(null)
 
   const value = {
     state: { user, references, skills, education, workExperience, portfolio },
