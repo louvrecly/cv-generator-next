@@ -43,8 +43,8 @@
             { "key": "mongodb", "label": "MongoDB", "show": true },
             { "key": "redis", "label": "Redis", "show": true },
             { "key": "postgreSQL", "label": "PostgreSQL", "show": true },
-            { "key": "jest", "label": "Jest", "show": true },
-            { "key": "knex.js", "label": "Knex.js", "show": true }
+            { "key": "jest", "label": "Jest", "show": false },
+            { "key": "knex.js", "label": "Knex.js", "show": false }
           ]
         },
         {
