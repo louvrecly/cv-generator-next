@@ -6,12 +6,13 @@ const nextConfig = {
       'upload.wikimedia.org',
       'media-exp1.licdn.com',
       'scontent.xx.fbcdn.net',
-      'pigeoncity.com.hk',
+      'cdn.qwiklabs.com',
       'images.squarespace-cdn.com',
-      'www.hk-matrix.com',
-      'media.istockphoto.com',
       'pbs.twimg.com',
-      'yt3.ggpht.com'
+      'yt3.ggpht.com',
+      'media.istockphoto.com',
+      'www.hk-matrix.com',
+      'pigeoncity.com.hk'
     ]
   }
 }
