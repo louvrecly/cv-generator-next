@@ -3,7 +3,7 @@ export default function Linkable({ link = null, children }) {
     <>
       {link
         ? <a href={link} target="_blank" rel="noreferrer">{children}</a>
-        : {children}}
+        : <span className="contents">{children}</span>}
     </>
   )
 }
