@@ -37,6 +37,7 @@
       "key": "project-c",
       "name": "Project C",
       "show": true,
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Ski_trail_rating_symbol_red_circle.png",
       "link": "https://www.netflix.com/",
       "type": "Personal Project",
       "description": "Some standard project created",
