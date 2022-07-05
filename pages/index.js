@@ -5,12 +5,12 @@ import ReferencesSection from 'components/ReferencesSection'
 import SkillsSection from 'components/SkillsSection'
 import EducationSection from 'components/EducationSection'
 import WorkExperienceSection from 'components/WorkExperienceSection'
-import ProjectsSection from 'components/ProjectsSection'
+import PortfolioSection from 'components/PortfolioSection'
 
 export default function Home() {
   const { state, setters } = useContext(DataContext)
-  const { user, references, skills, education, workExperience, projects } = state
-  const { setUser, setReferences, setSkills, setEducation, setWorkExperience, setProjects } = setters
+  const { user, references, skills, education, workExperience, portfolio } = state
+  const { setUser, setReferences, setSkills, setEducation, setWorkExperience, setPortfolio } = setters
 
   useEffect(() => {
     const payloads = [
@@ -19,7 +19,7 @@ export default function Home() {
       { endpoint: 'skills', field: 'skills', setter: setSkills },
       { endpoint: 'education', field: 'education', setter: setEducation },
       { endpoint: 'work-experience', field: 'workExperience', setter: setWorkExperience },
-      { endpoint: 'projects', field: 'projects', setter: setProjects }
+      { endpoint: 'portfolio', field: 'portfolio', setter: setPortfolio }
     ]
 
     Promise.all(
@@ -31,7 +31,7 @@ export default function Home() {
             .catch(error => `Error - ${error.message}`)
       )
     )
-  }, [setEducation, setProjects, setReferences, setSkills, setUser, setWorkExperience])
+  }, [setEducation, setPortfolio, setReferences, setSkills, setUser, setWorkExperience])
 
   return (
     <div className="mx-8 py-8 h-full md:h-[1485px] md:flex md:flex-col md:overflow-hidden">
@@ -46,7 +46,7 @@ export default function Home() {
 
         <WorkExperienceSection workExperience={workExperience} setWorkExperience={setWorkExperience} />
 
-        <ProjectsSection projects={projects} setProjects={setProjects} />
+        <PortfolioSection portfolio={portfolio} setPortfolio={setPortfolio} />
       </div>
     </div>
   )

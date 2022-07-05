@@ -1,5 +1,5 @@
 {
-  "activities": [
+  "projects": [
     {
       "key": "project-a",
       "name": "Project A",
@@ -47,38 +47,6 @@
       },
       "items": [
         "Constructed something for someone"
-      ]
-    },
-    {
-      "key": "project-d",
-      "name": "Project D",
-      "show": true,
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Ski_trail_rating_symbol_red_circle.png",
-      "link": "https://www.google.com/",
-      "type": "Voluntary Work",
-      "description": "Helper in some events",
-      "period": {
-        "start": "Mar 9, 2018",
-        "end": "Jul 19, 2018"
-      },
-      "items": [
-        "Assisted in something meaningful"
-      ]
-    },
-    {
-      "key": "project-e",
-      "name": "Project E",
-      "show": true,
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Ski_trail_rating_symbol_red_circle.png",
-      "link": "https://www.google.com/",
-      "type": "Extra-Curricular",
-      "description": "Something leisure",
-      "period": {
-        "start": "Dec 18, 2016",
-        "end": "Jan 31, 2016"
-      },
-      "items": [
-        "Joined something interesting"
       ]
     }
   ]

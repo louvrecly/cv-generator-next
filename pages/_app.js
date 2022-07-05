@@ -9,11 +9,11 @@ function MyApp({ Component, pageProps }) {
   const [skills, setSkills] = useState()
   const [education, setEducation] = useState()
   const [workExperience, setWorkExperience] = useState()
-  const [projects, setProjects] = useState()
+  const [portfolio, setPortfolio] = useState()
 
   const value = {
-    state: { user, references, skills, education, workExperience, projects },
-    setters: { setUser, setReferences, setSkills, setEducation, setWorkExperience, setProjects }
+    state: { user, references, skills, education, workExperience, portfolio },
+    setters: { setUser, setReferences, setSkills, setEducation, setWorkExperience, setPortfolio }
   }
 
   return (
