@@ -6,7 +6,7 @@ export default function WorkExperienceTable({ data }) {
       {data.companies.map(company => (
         <li key={company.key} className="py-1">
           <div className="flex items-center gap-2">
-            {company.logo && <Image className="w-full h-auto" src={company.logo} alt={company.name} width={20} height={20} />}
+            {company.logo && <Image src={company.logo} alt={company.name} width={15} height={15} />}
             <h3 className="font-bold text-sm">{company.name}</h3>
           </div>
 

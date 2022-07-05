@@ -10,14 +10,14 @@ export default function EducationTable({ data }) {
               ? (
                 <a href={activity.link} target="_blank" rel="noreferrer">
                   <div className="flex items-center gap-2">
-                    {activity.logo && <Image className="w-full h-auto" src={activity.logo} alt={activity.name} width={20} height={20} />}
+                    {activity.logo && <Image src={activity.logo} alt={activity.name} width={15} height={15} />}
                     <h3 className="font-bold text-sm">{activity.name}</h3>
                   </div>
                 </a>
               )
               : (
                 <div className="flex items-center gap-2">
-                  {activity.logo && <Image className="w-full h-auto" src={activity.logo} alt={activity.name} width={20} height={20} />}
+                  {activity.logo && <Image src={activity.logo} alt={activity.name} width={15} height={15} />}
                   <h3 className="font-bold text-sm">{activity.name}</h3>
                 </div>
               )
