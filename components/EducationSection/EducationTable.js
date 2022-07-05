@@ -1,3 +1,4 @@
+import Linkable from 'components/Table/Linkable'
 import TitleRow from 'components/Table/TitleRow'
 import InfoRow from 'components/Table/InfoRow'
 import ItemsList from 'components/Table/ItemsList'
@@ -7,7 +8,9 @@ export default function EducationTable({ data }) {
     <ul>
       {data.institutions.map(institution => (
         <li key={institution.key} className="py-1">
-          <TitleRow title={institution.name} logo={institution.logo} />
+          <Linkable link={institution.link}>
+            <TitleRow title={institution.name} logo={institution.logo} />
+          </Linkable>
 
           <ul>
             {institution.courses.map(course => (

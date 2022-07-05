@@ -1,3 +1,4 @@
+import Linkable from 'components/Table/Linkable'
 import TitleRow from 'components/Table/TitleRow'
 import InfoRow from 'components/Table/InfoRow'
 import ItemsList from 'components/Table/ItemsList'
@@ -7,7 +8,9 @@ export default function WorkExperienceTable({ data }) {
     <ul>
       {data.companies.map(company => (
         <li key={company.key} className="py-1">
-          <TitleRow title={company.name} logo={company.logo} />
+          <Linkable link={company.link}>
+            <TitleRow title={company.name} logo={company.logo} />
+          </Linkable>
 
           <ul>
             {company.positions.map(position => (

@@ -1,3 +1,4 @@
+import Linkable from 'components/Table/Linkable'
 import TitleRow from 'components/Table/TitleRow'
 import InfoRow from 'components/Table/InfoRow'
 import ItemsList from 'components/Table/ItemsList'
@@ -7,19 +8,9 @@ export default function EducationTable({ data }) {
     <ul>
       {data.activities.map(activity => (
         <li key={activity.key} className="py-1">
-          {
-            activity.link
-              ? (
-                <a href={activity.link} target="_blank" rel="noreferrer">
-                  <TitleRow title={activity.name} logo={activity.logo} />
-                </a>
-              )
-              : (
-                <div className="flex items-center gap-2">
-                  <TitleRow title={activity.name} logo={activity.logo} />
-                </div>
-              )
-          }
+          <Linkable link={activity.link}>
+            <TitleRow title={activity.name} logo={activity.logo} />
+          </Linkable>
 
           <InfoRow
             headText={`${activity.description} · ${activity.type}`}
