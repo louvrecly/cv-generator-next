@@ -2,7 +2,7 @@
   "activities": [
     {
       "key": "project-a",
-      "name": "PROJECT A",
+      "name": "Project A",
       "show": true,
       "logo": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Ski_trail_rating_symbol_red_circle.png",
       "link": "https://www.google.com/",
@@ -22,7 +22,7 @@
       "name": "Project B",
       "show": true,
       "logo": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Ski_trail_rating_symbol_red_circle.png",
-      "link": "https://www.youtube.com/",
+      "link": "https://www.google.com/",
       "type": "Personal Project",
       "description": "Some Nice side project",
       "period": {
@@ -38,7 +38,7 @@
       "name": "Project C",
       "show": true,
       "logo": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Ski_trail_rating_symbol_red_circle.png",
-      "link": "https://www.netflix.com/",
+      "link": "https://www.google.com/",
       "type": "Personal Project",
       "description": "Some standard project created",
       "period": {
@@ -54,7 +54,7 @@
       "name": "Project D",
       "show": true,
       "logo": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Ski_trail_rating_symbol_red_circle.png",
-      "link": "https://www.instagram.com/",
+      "link": "https://www.google.com/",
       "type": "Voluntary Work",
       "description": "Helper in some events",
       "period": {
@@ -70,7 +70,7 @@
       "name": "Project E",
       "show": true,
       "logo": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Ski_trail_rating_symbol_red_circle.png",
-      "link": "https://www.facebook.com/",
+      "link": "https://www.google.com/",
       "type": "Extra-Curricular",
       "description": "Something leisure",
       "period": {

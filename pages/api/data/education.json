@@ -5,6 +5,7 @@
       "name": "Institution 1",
       "show": true,
       "logo": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Green_equilateral_triangle_point_up.svg",
+      "link": "https://www.youtube.com/",
       "courses": [
         {
           "key": "institution-1_course_course-a",
@@ -27,6 +28,7 @@
       "name": "Institution 2",
       "show": true,
       "logo": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Green_equilateral_triangle_point_up.svg",
+      "link": "https://www.youtube.com/",
       "courses": [
         {
           "key": "institution-2_course_course-b",
@@ -49,6 +51,7 @@
       "name": "Institution 3",
       "show": true,
       "logo": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Green_equilateral_triangle_point_up.svg",
+      "link": "https://www.youtube.com/",
       "courses": [
         {
           "key": "institution-3_course_course-c",
@@ -70,6 +73,7 @@
       "name": "Institution 4",
       "show": true,
       "logo": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Green_equilateral_triangle_point_up.svg",
+      "link": "https://www.youtube.com/",
       "courses": [
         {
           "key": "institution-4_course_course-d",

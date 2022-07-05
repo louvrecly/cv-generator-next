@@ -5,6 +5,7 @@
       "name": "Company 1",
       "show": true,
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/000080_Navy_Blue_Square.svg/1024px-000080_Navy_Blue_Square.svg.png",
+      "link": "https://www.netflix.com/",
       "positions": [
         {
           "key": "company-1_title-a",
@@ -42,6 +43,7 @@
       "name": "Company 2",
       "show": true,
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/000080_Navy_Blue_Square.svg/1024px-000080_Navy_Blue_Square.svg.png",
+      "link": "https://www.netflix.com/",
       "positions": [
         {
           "key": "company-2_title-c",
@@ -64,6 +66,7 @@
       "name": "Company 3",
       "show": true,
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/000080_Navy_Blue_Square.svg/1024px-000080_Navy_Blue_Square.svg.png",
+      "link": "https://www.netflix.com/",
       "positions": [
         {
           "key": "company-3_title-d",
@@ -86,6 +89,7 @@
       "name": "Company 4",
       "show": true,
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/000080_Navy_Blue_Square.svg/1024px-000080_Navy_Blue_Square.svg.png",
+      "link": "https://www.netflix.com/",
       "positions": [
         {
           "key": "company-4_title-e",
