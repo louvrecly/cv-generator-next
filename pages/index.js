@@ -39,7 +39,7 @@ export default function Home() {
     <div className="mx-8 py-8 h-full md:h-[1485px] md:flex md:flex-col md:overflow-hidden">
       <UserInfoBar user={user} setUser={setUser} />
 
-      <div className="md:flex-1 md:flex md:flex-col md:flex-wrap md:gap-x-3 md:overflow-scroll">
+      <div className="md:flex-1 md:flex md:flex-col md:flex-wrap md:content-between md:gap-x-3 md:overflow-scroll">
         <ReferencesSection references={references} setReferences={setReferences} />
 
         <SkillsSection skills={skills} setSkills={setSkills} />
