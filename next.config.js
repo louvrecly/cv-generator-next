@@ -12,6 +12,8 @@ const nextConfig = {
       'yt3.ggpht.com',
       'media.istockphoto.com',
       'www.hk-matrix.com',
+      'encrypted-tbn0.gstatic.com',
+      'www.vectorkhazana.com',
       'pigeoncity.com.hk'
     ]
   }
