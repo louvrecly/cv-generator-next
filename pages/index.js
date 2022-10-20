@@ -2,7 +2,6 @@ import { useContext, useEffect } from 'react'
 import DataContext from 'context/data'
 import UserInfoBar from 'components/UserInfoBar'
 import ReferencesSection from 'components/ReferencesSection'
-import SkillsSection from 'components/SkillsSection'
 import EducationSection from 'components/EducationSection'
 import ActivitiesSection from 'components/ActivitiesSection'
 import WorkExperienceSection from 'components/WorkExperienceSection'
@@ -13,7 +12,6 @@ export default function Home() {
   const {
     user,
     references,
-    skills,
     education,
     activities,
     workExperience,
@@ -22,7 +20,6 @@ export default function Home() {
   const {
     setUser,
     setReferences,
-    setSkills,
     setEducation,
     setActivities,
     setWorkExperience,
@@ -33,7 +30,6 @@ export default function Home() {
     const payloads = [
       { endpoint: 'user', field: 'user', setter: setUser },
       { endpoint: 'references', field: 'references', setter: setReferences },
-      { endpoint: 'skills', field: 'skills', setter: setSkills },
       { endpoint: 'education', field: 'education', setter: setEducation },
       { endpoint: 'activities', field: 'activities', setter: setActivities },
       { endpoint: 'work-experience', field: 'workExperience', setter: setWorkExperience },
@@ -52,7 +48,6 @@ export default function Home() {
   }, [
     setUser,
     setReferences,
-    setSkills,
     setEducation,
     setActivities,
     setWorkExperience,
@@ -65,8 +60,6 @@ export default function Home() {
 
       <div className="md:flex-1 md:flex md:flex-col md:flex-wrap md:content-between md:gap-x-3 md:overflow-scroll">
         <ReferencesSection references={references} setReferences={setReferences} />
-
-        <SkillsSection skills={skills} setSkills={setSkills} />
 
         <EducationSection education={education} setEducation={setEducation} />
 
