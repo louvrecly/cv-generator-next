@@ -4,14 +4,30 @@ import UserInfoBar from 'components/UserInfoBar'
 import ReferencesSection from 'components/ReferencesSection'
 import SkillsSection from 'components/SkillsSection'
 import EducationSection from 'components/EducationSection'
+import ActivitiesSection from 'components/ActivitiesSection'
 import WorkExperienceSection from 'components/WorkExperienceSection'
 import PortfolioSection from 'components/PortfolioSection'
-import ActivitiesSection from 'components/ActivitiesSection'
 
 export default function Home() {
   const { state, setters } = useContext(DataContext)
-  const { user, references, skills, education, workExperience, portfolio, activities } = state
-  const { setUser, setReferences, setSkills, setEducation, setWorkExperience, setPortfolio, setActivities } = setters
+  const {
+    user,
+    references,
+    skills,
+    education,
+    activities,
+    workExperience,
+    portfolio
+  } = state
+  const {
+    setUser,
+    setReferences,
+    setSkills,
+    setEducation,
+    setActivities,
+    setWorkExperience,
+    setPortfolio
+  } = setters
 
   useEffect(() => {
     const payloads = [
@@ -19,9 +35,9 @@ export default function Home() {
       { endpoint: 'references', field: 'references', setter: setReferences },
       { endpoint: 'skills', field: 'skills', setter: setSkills },
       { endpoint: 'education', field: 'education', setter: setEducation },
+      { endpoint: 'activities', field: 'activities', setter: setActivities },
       { endpoint: 'work-experience', field: 'workExperience', setter: setWorkExperience },
-      { endpoint: 'portfolio', field: 'portfolio', setter: setPortfolio },
-      { endpoint: 'activities', field: 'activities', setter: setActivities }
+      { endpoint: 'portfolio', field: 'portfolio', setter: setPortfolio }
     ]
 
     Promise.all(
@@ -33,7 +49,15 @@ export default function Home() {
             .catch(error => `Error - ${error.message}`)
       )
     )
-  }, [setUser, setReferences, setSkills, setEducation, setWorkExperience, setPortfolio, setActivities])
+  }, [
+    setUser,
+    setReferences,
+    setSkills,
+    setEducation,
+    setActivities,
+    setWorkExperience,
+    setPortfolio
+  ])
 
   return (
     <div className="mx-8 py-8 h-full md:h-[1485px] md:flex md:flex-col md:overflow-hidden">
@@ -46,11 +70,11 @@ export default function Home() {
 
         <EducationSection education={education} setEducation={setEducation} />
 
+        <ActivitiesSection activities={activities} setActivities={setActivities} />
+
         <WorkExperienceSection workExperience={workExperience} setWorkExperience={setWorkExperience} />
 
         <PortfolioSection portfolio={portfolio} setPortfolio={setPortfolio} />
-
-        <ActivitiesSection activities={activities} setActivities={setActivities} />
       </div>
     </div>
   )
