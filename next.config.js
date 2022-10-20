@@ -3,6 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: [
+      'edx-cdn.org',
+      'ih1.redbubble.net',
+      'images.ctfassets.net',
       'upload.wikimedia.org',
       'media-exp1.licdn.com',
       'scontent.xx.fbcdn.net',
