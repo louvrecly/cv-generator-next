@@ -3,9 +3,9 @@ import DataContext from 'context/data'
 import UserInfoBar from 'components/UserInfoBar'
 import ReferencesSection from 'components/ReferencesSection'
 import EducationSection from 'components/EducationSection'
-import ActivitiesSection from 'components/ActivitiesSection'
-import WorkExperienceSection from 'components/WorkExperienceSection'
 import PortfolioSection from 'components/PortfolioSection'
+import WorkExperienceSection from 'components/WorkExperienceSection'
+import ActivitiesSection from 'components/ActivitiesSection'
 
 export default function Home() {
   const { state, setters } = useContext(DataContext)
@@ -13,17 +13,17 @@ export default function Home() {
     user,
     references,
     education,
-    activities,
+    portfolio,
     workExperience,
-    portfolio
+    activities,
   } = state
   const {
     setUser,
     setReferences,
     setEducation,
-    setActivities,
+    setPortfolio,
     setWorkExperience,
-    setPortfolio
+    setActivities,
   } = setters
 
   useEffect(() => {
@@ -31,9 +31,9 @@ export default function Home() {
       { endpoint: 'user', field: 'user', setter: setUser },
       { endpoint: 'references', field: 'references', setter: setReferences },
       { endpoint: 'education', field: 'education', setter: setEducation },
-      { endpoint: 'activities', field: 'activities', setter: setActivities },
+      { endpoint: 'portfolio', field: 'portfolio', setter: setPortfolio },
       { endpoint: 'work-experience', field: 'workExperience', setter: setWorkExperience },
-      { endpoint: 'portfolio', field: 'portfolio', setter: setPortfolio }
+      { endpoint: 'activities', field: 'activities', setter: setActivities },
     ]
 
     Promise.all(
@@ -49,9 +49,9 @@ export default function Home() {
     setUser,
     setReferences,
     setEducation,
-    setActivities,
+    setPortfolio,
     setWorkExperience,
-    setPortfolio
+    setActivities,
   ])
 
   return (
@@ -63,11 +63,11 @@ export default function Home() {
 
         <EducationSection education={education} setEducation={setEducation} />
 
-        <ActivitiesSection activities={activities} setActivities={setActivities} />
+        <PortfolioSection portfolio={portfolio} setPortfolio={setPortfolio} />
 
         <WorkExperienceSection workExperience={workExperience} setWorkExperience={setWorkExperience} />
 
-        <PortfolioSection portfolio={portfolio} setPortfolio={setPortfolio} />
+        <ActivitiesSection activities={activities} setActivities={setActivities} />
       </div>
     </div>
   )
