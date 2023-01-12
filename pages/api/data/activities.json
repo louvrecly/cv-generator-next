@@ -2,67 +2,104 @@
   "activities": [
     {
       "key": "activity-a",
-      "name": "Activity A",
       "show": true,
+      "name": "Activity A",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Gold_Star.svg/1024px-Gold_Star.svg.png",
       "link": "https://open.spotify.com/",
-      "type": "Work Activity",
-      "description": "Some cool activity",
-      "period": {
-        "start": "Nov 22, 2021",
-        "end": "Present"
-      },
-      "items": [
-        "Create something amazing",
-        "Improve part of the activity"
+      "positions": [
+        {
+          "key": "activity-a_title-1",
+          "show": true,
+          "title": "Some cool activity",
+          "type": "Work Activity",
+          "period": {
+            "start": "Nov 22, 2021",
+            "end": "Present"
+          },
+          "items": [
+            "Create something amazing",
+            "Improve part of the activity"
+          ]
+        },
+        {
+          "key": "activity-a_title-2",
+          "show": true,
+          "title": "Some cooler activity",
+          "type": "Work Activity",
+          "period": {
+            "start": "Aug 2, 2021",
+            "end": "Aug 3, 2021"
+          },
+          "items": [
+            "Completed something difficult"
+          ]
+        }
       ]
     },
     {
       "key": "activity-b",
-      "name": "Activity B",
       "show": true,
+      "name": "Activity B",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Gold_Star.svg/1024px-Gold_Star.svg.png",
       "link": "https://open.spotify.com/",
-      "type": "Personal Activity",
-      "description": "Some nice activity",
-      "period": {
-        "start": "Feb 2, 2010",
-        "end": "May 5, 2010"
-      },
-      "items": [
-        "Made an interesting thing that help someone in something"
+      "positions": [
+        {
+          "key": "activity-b_title-1",
+          "show": true,
+          "title": "Some nice activity",
+          "type": "Personal Activity",
+          "period": {
+            "start": "Feb 2, 2010",
+            "end": "May 5, 2010"
+          },
+          "items": [
+            "Made an interesting thing that help someone in something"
+          ]
+        }
       ]
     },
     {
       "key": "activity-c",
-      "name": "Activity C",
       "show": true,
+      "name": "Activity C",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Gold_Star.svg/1024px-Gold_Star.svg.png",
       "link": "https://open.spotify.com/",
-      "type": "Voluntary Work",
-      "description": "Helper in some events",
-      "period": {
-        "start": "Mar 9, 2018",
-        "end": "Jul 19, 2018"
-      },
-      "items": [
-        "Assisted in something meaningful"
+      "positions": [
+        {
+          "key": "activity-c_title-1",
+          "show": true,
+          "title": "Helper in some events",
+          "type": "Voluntary Work",
+          "period": {
+            "start": "Mar 9, 2018",
+            "end": "Jul 19, 2018"
+          },
+          "items": [
+            "Assisted in something meaningful"
+          ]
+        }
       ]
     },
     {
       "key": "activity-d",
-      "name": "Activity D",
       "show": true,
+      "name": "Activity D",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Gold_Star.svg/1024px-Gold_Star.svg.png",
       "link": "https://open.spotify.com/",
-      "type": "Extra-Curricular",
-      "description": "Something leisure",
-      "period": {
-        "start": "Dec 18, 2016",
-        "end": "Jan 31, 2016"
-      },
-      "items": [
-        "Joined something interesting"
+      "positions": [
+        {
+          "key": "activity-d_title-1",
+          "show": true,
+          "title": "Something leisure",
+          "type": "Extra-Curricular",
+          "period": {
+            "start": "Dec 18, 2016",
+            "end": "Jan 31, 2016"
+          },
+          "items": [
+            "Joined something interesting"
+          ]
+        }
       ]
     }
   ]

@@ -12,12 +12,18 @@ export default function ActivitiesTable({ data }) {
             <TitleRow title={activity.name} logo={activity.logo} />
           </Linkable>
 
-          <InfoRow
-            headText={`${activity.description} · ${activity.type}`}
-            tailText={`${activity.period.start} - ${activity.period.end}`}
-          />
+          <ul>
+            {activity.positions.map(position => (
+              <li key={position.key}>
+                <InfoRow
+                  headText={`${position.title} · ${position.type}`}
+                  tailText={`${position.period.start} - ${position.period.end}`}
+                />
 
-          <ItemsList items={activity.items} />
+                <ItemsList items={position.items} />
+              </li>
+            ))}
+          </ul>
         </li>
       ))}
     </ul>
