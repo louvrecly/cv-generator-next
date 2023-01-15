@@ -1,7 +1,14 @@
 import { useState } from 'react'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { config } from '@fortawesome/fontawesome-svg-core'
 import DataContext from 'context/data'
 import DefaultLayout from 'components/layouts/default'
 import 'styles/globals.css'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+
+library.add(fas)
+config.autoAddCss = false
 
 function MyApp({ Component, pageProps }) {
   const [user, setUser] = useState(null)
