@@ -1,7 +1,19 @@
 {
   "name": "User Name",
   "contacts": [
-    { "key": "mobile", "label": "Mobile", "show": true, "value": "+0 (000) 000 0000" },
-    { "key": "email", "label": "Email", "show": true, "value": "username@gmail.com" }
+    {
+      "key": "mobile",
+      "show": true,
+      "label": "Mobile",
+      "icon": "phone",
+      "value": "+0 (000) 000 0000"
+    },
+    {
+      "key": "email",
+      "show": true,
+      "label": "Email",
+      "icon": "envelope",
+      "value": "username@gmail.com"
+    }
   ]
 }
