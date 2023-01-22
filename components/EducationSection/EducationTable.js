@@ -7,7 +7,7 @@ export default function EducationTable({ data }) {
   return (
     <ul>
       {data.institutions.map(institution => (
-        <li key={institution.key} className="py-1">
+        <li key={institution.key} className="py-0.5">
           <Linkable link={institution.link}>
             <TitleRow title={institution.name} logo={institution.logo} />
           </Linkable>

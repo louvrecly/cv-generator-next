@@ -5,7 +5,7 @@ export default function SkillsTable({ data }) {
   return (
     <ul>
       {data.categories.map(category => (
-        <li key={category.key} className="py-1">
+        <li key={category.key} className="py-0.5">
           <TitleRow title={category.label} />
 
           <ul>

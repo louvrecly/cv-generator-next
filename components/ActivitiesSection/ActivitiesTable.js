@@ -7,7 +7,7 @@ export default function ActivitiesTable({ data }) {
   return (
     <ul>
       {data.activities.map(activity => (
-        <li key={activity.key} className="py-1">
+        <li key={activity.key} className="py-0.5">
           <Linkable link={activity.link}>
             <TitleRow title={activity.name} logo={activity.logo} />
           </Linkable>

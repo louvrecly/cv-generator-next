@@ -55,17 +55,17 @@ export default function Home() {
   ])
 
   return (
-    <div className="mx-8 py-8 h-full md:h-[1485px] md:flex md:flex-col md:overflow-hidden">
+    <div className="mx-8 py-5">
       <UserInfoBar user={user} setUser={setUser} />
 
-      <div className="md:flex-1 md:flex md:flex-col md:flex-wrap md:content-between md:gap-x-3 md:overflow-scroll">
+      <div>
         <ReferencesSection references={references} setReferences={setReferences} />
+
+        <WorkExperienceSection workExperience={workExperience} setWorkExperience={setWorkExperience} />
 
         <EducationSection education={education} setEducation={setEducation} />
 
         <PortfolioSection portfolio={portfolio} setPortfolio={setPortfolio} />
-
-        <WorkExperienceSection workExperience={workExperience} setWorkExperience={setWorkExperience} />
 
         <ActivitiesSection activities={activities} setActivities={setActivities} />
       </div>

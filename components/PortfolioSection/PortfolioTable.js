@@ -7,7 +7,7 @@ export default function PortfolioTable({ data }) {
   return (
     <ul>
       {data.projects.map(project => (
-        <li key={project.key} className="py-1">
+        <li key={project.key} className="py-0.5">
           <Linkable link={project.link}>
             <TitleRow title={project.name} logo={project.logo} />
           </Linkable>

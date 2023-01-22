@@ -7,7 +7,7 @@ export default function WorkExperienceTable({ data }) {
   return (
     <ul>
       {data.companies.map(company => (
-        <li key={company.key} className="py-1">
+        <li key={company.key} className="py-0.5">
           <Linkable link={company.link}>
             <TitleRow title={company.name} logo={company.logo} />
           </Linkable>
