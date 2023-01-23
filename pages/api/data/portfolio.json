@@ -13,8 +13,14 @@
         "end": "Present"
       },
       "items": [
-        "Create something amazing",
-        "Improve part of the project"
+        {
+          "show": true,
+          "content": "Create something amazing"
+        },
+        {
+          "show": true,
+          "content": "Improve part of the project"
+        }
       ]
     },
     {
@@ -30,7 +36,10 @@
         "end": "May 5, 2010"
       },
       "items": [
-        "Made an interesting thing that help someone in something"
+        {
+          "show": true,
+          "content": "Made an interesting thing that help someone in something"
+        }
       ]
     },
     {
@@ -46,7 +55,10 @@
         "end": "Nov 1, 2019"
       },
       "items": [
-        "Constructed something for someone"
+        {
+          "show": true,
+          "content": "Constructed something for someone"
+        }
       ]
     }
   ]

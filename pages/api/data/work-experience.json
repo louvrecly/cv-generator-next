@@ -17,9 +17,18 @@
             "end": "Present"
           },
           "items": [
-            "Led something big",
-            "Achieved something incredible",
-            "Enhanced something by certain %"
+            {
+              "show": true,
+              "content": "Led something big"
+            },
+            {
+              "show": true,
+              "content": "Achieved something incredible"
+            },
+            {
+              "show": true,
+              "content": "Enhanced something by certain %"
+            }
           ]
         },
         {
@@ -32,8 +41,14 @@
             "end": "Dec 31, 2020"
           },
           "items": [
-            "Done something amazing",
-            "Helped someone in something"
+            {
+              "show": true,
+              "content": "Done something amazing"
+            },
+            {
+              "show": true,
+              "content": "Helped someone in something"
+            }
           ]
         }
       ]
@@ -55,8 +70,14 @@
             "end": "Sep 30, 2020"
           },
           "items": [
-            "Organized something new",
-            "Managed something big"
+            {
+              "show": true,
+              "content": "Organized something new"
+            },
+            {
+              "show": true,
+              "content": "Managed something big"
+            }
           ]
         }
       ]
@@ -78,8 +99,14 @@
             "end": "Aug 30, 2020"
           },
           "items": [
-            "Done something good",
-            "Trained someone"
+            {
+              "show": true,
+              "content": "Done something good"
+            },
+            {
+              "show": true,
+              "content": "Trained someone"
+            }
           ]
         }
       ]
@@ -101,8 +128,14 @@
             "end": "May 30, 2009"
           },
           "items": [
-            "Maintained something for a certain time",
-            "Improved something"
+            {
+              "show": true,
+              "content": "Maintained something for a certain time"
+            },
+            {
+              "show": true,
+              "content": "Improved something"
+            }
           ]
         },
         {
@@ -115,8 +148,14 @@
             "end": "Feb 14, 2009"
           },
           "items": [
-            "Helped someone",
-            "Provided something good"
+            {
+              "show": true,
+              "content": "Helped someone"
+            },
+            {
+              "show": true,
+              "content": "Provided something good"
+            }
           ]
         }
       ]

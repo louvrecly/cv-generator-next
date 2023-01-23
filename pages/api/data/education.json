@@ -19,8 +19,14 @@
         }
       ],
       "achievements": [
-        "Certificate A",
-        "Certificate B"
+        {
+          "show": true,
+          "content": "Certificate A"
+        },
+        {
+          "show": true,
+          "content": "Certificate B"
+        }
       ]
     },
     {
@@ -42,8 +48,14 @@
         }
       ],
       "achievements": [
-        "Certificate C",
-        "Certificate D"
+        {
+          "show": true,
+          "content": "Certificate C"
+        },
+        {
+          "show": true,
+          "content": "Certificate D"
+        }
       ]
     },
     {
@@ -65,7 +77,10 @@
         }
       ],
       "achievements": [
-        "Certificate E"
+        {
+          "show": true,
+          "content": "Certificate E"
+        }
       ]
     },
     {
@@ -87,7 +102,10 @@
         }
       ],
       "achievements": [
-        "Certificate F"
+        {
+          "show": true,
+          "content": "Certificate F"
+        }
       ]
     }
   ]
