@@ -5,7 +5,7 @@ import { filterByShow } from 'services/utils'
 
 export default function EducationSection({ education, setEducation }) {
   return (
-    <Section title="Education">
+    <Section title="Education and Training">
       <EditableBlock data={education} setData={setEducation} placeholder="Loading education data...">
         <EducationTable data={filterByShow(education)} />
       </EditableBlock>
