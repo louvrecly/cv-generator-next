@@ -1,6 +1,11 @@
 import Image from 'next/image'
 
-export default function TitleRow({ title, logo = null }) {
+interface TitleRowProps {
+  title: string;
+  logo: string;
+}
+
+export default function TitleRow({ title, logo = '' }: TitleRowProps) {
   return (
     <div className="flex items-center gap-2">
       {logo && <Image src={logo} alt={title} width={15} height={15} />}

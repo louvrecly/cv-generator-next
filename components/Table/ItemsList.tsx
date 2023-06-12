@@ -1,4 +1,10 @@
-export default function ItemsList({ items = [] }) {
+import { ListItem } from '@/context/data.types';
+
+interface ItemsListProps {
+  items: ListItem[];
+}
+
+export default function ItemsList({ items = [] }: ItemsListProps) {
   return (
     <ul className="list-disc list-inside text-xs">
       {items
