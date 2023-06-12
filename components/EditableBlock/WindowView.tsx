@@ -1,4 +1,11 @@
-export default function WindowView({ children, handleEdit }) {
+import { ReactNode } from 'react';
+
+interface WindowViewProps {
+  children?: ReactNode;
+  handleEdit?: () => void;
+}
+
+export default function WindowView({ children, handleEdit }: WindowViewProps) {
   return (
     <div className="c-window">
       <div className="c-window__glass">{children}</div>
