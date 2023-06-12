@@ -1,11 +1,11 @@
 import { useContext, useEffect } from 'react'
-import DataContext from 'context/data'
-import UserInfoBar from 'components/UserInfoBar'
-import ReferencesSection from 'components/ReferencesSection'
-import WorkExperienceSection from 'components/WorkExperienceSection'
-import EducationSection from 'components/EducationSection'
-import ActivitiesSection from 'components/ActivitiesSection'
-import PortfolioSection from 'components/PortfolioSection'
+import DataContext from '@/context/data'
+import UserInfoBar from '@/components/UserInfoBar'
+import ReferencesSection from '@/components/ReferencesSection'
+import WorkExperienceSection from '@/components/WorkExperienceSection'
+import EducationSection from '@/components/EducationSection'
+import ActivitiesSection from '@/components/ActivitiesSection'
+import PortfolioSection from '@/components/PortfolioSection'
 
 export default function Home() {
   const { state, setters } = useContext(DataContext)

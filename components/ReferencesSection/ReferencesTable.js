@@ -1,4 +1,4 @@
-import Linkable from 'components/Table/Linkable'
+import Linkable from '@/components/Table/Linkable'
 
 export default function ReferencesTable({ data }) {
   return (

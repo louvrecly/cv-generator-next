@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Linkable from 'components/Table/Linkable'
+import Linkable from '@/components/Table/Linkable'
 
 export default function UserInfo({ data }) {
   return (

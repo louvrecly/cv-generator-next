@@ -1,7 +1,7 @@
-import Section from 'components/Section'
-import EditableBlock from 'components/EditableBlock'
+import Section from '@/components/Section'
+import EditableBlock from '@/components/EditableBlock'
 import ActivitiesTable from './ActivitiesTable'
-import { filterByShow } from 'services/utils'
+import { filterByShow } from '@/services/utils'
 
 export default function ActivitiesSection({ activities, setActivities }) {
   return (

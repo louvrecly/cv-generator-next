@@ -3,9 +3,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { config } from '@fortawesome/fontawesome-svg-core'
-import DataContext from 'context/data'
-import DefaultLayout from 'components/layouts/default'
-import 'styles/globals.css'
+import DataContext from '@/context/data'
+import DefaultLayout from '@/components/layouts/default'
+import '@/styles/globals.css'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 
 library.add(faPhone, faEnvelope, faGithub)

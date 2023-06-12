@@ -1,7 +1,7 @@
-import Linkable from 'components/Table/Linkable'
-import TitleRow from 'components/Table/TitleRow'
-import InfoRow from 'components/Table/InfoRow'
-import ItemsList from 'components/Table/ItemsList'
+import Linkable from '@/components/Table/Linkable'
+import TitleRow from '@/components/Table/TitleRow'
+import InfoRow from '@/components/Table/InfoRow'
+import ItemsList from '@/components/Table/ItemsList'
 
 export default function PortfolioTable({ data }) {
   return (

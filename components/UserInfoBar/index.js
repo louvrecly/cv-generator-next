@@ -1,6 +1,6 @@
-import EditableBlock from 'components/EditableBlock'
+import EditableBlock from '@/components/EditableBlock'
 import UserInfo from './UserInfo'
-import { filterByShow } from 'services/utils'
+import { filterByShow } from '@/services/utils'
 
 export default function UserInfoBar({ user, setUser }) {
   return (

@@ -1,5 +1,5 @@
-import TitleRow from 'components/Table/TitleRow'
-import InfoRow from 'components/Table/InfoRow'
+import TitleRow from '@/components/Table/TitleRow'
+import InfoRow from '@/components/Table/InfoRow'
 
 export default function SkillsTable({ data }) {
   return (
