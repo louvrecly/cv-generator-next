@@ -5,7 +5,7 @@ import { filterByShow } from 'services/utils'
 
 export default function PortfolioSection({ portfolio, setPortfolio }) {
   return (
-    <Section title="Portfolio">
+    <Section title="Projects">
       <EditableBlock data={portfolio} setData={setPortfolio} placeholder="Loading portfolio data...">
         <PortfolioTable data={filterByShow(portfolio)} />
       </EditableBlock>

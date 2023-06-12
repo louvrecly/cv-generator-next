@@ -12,10 +12,7 @@ export default function PortfolioTable({ data }) {
             <TitleRow title={project.name} logo={project.logo} />
           </Linkable>
 
-          <InfoRow
-            headText={`${project.description} · ${project.type}`}
-            tailText={`${project.period.start} - ${project.period.end}`}
-          />
+          <InfoRow headText={`${project.description} · ${project.type}`} />
 
           <ItemsList items={project.items} />
         </li>
