@@ -12,6 +12,7 @@
 body {
   width: 21cm;
   height: 29.7cm;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 html,
@@ -106,6 +107,7 @@ a {
 .c-window__glass {
   width: 100%;
   background-color: hsl(0, 0%, 100%);
+  /* filter: brightness(1); */
   transition: filter 0.3s ease;
 }
 
