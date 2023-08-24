@@ -8,7 +8,7 @@ interface SectionProps {
 export default function Section({ title, children }: SectionProps) {
   return (
     <section className="py-0.5 w-full">
-      <h2 className="text-base uppercase">{title}</h2>
+      <h2 className="text-base uppercase border-b border-neutral-300">{title}</h2>
 
       {children}
     </section>

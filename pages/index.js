@@ -1,39 +1,39 @@
 import { useContext, useEffect } from 'react'
 import DataContext from '@/context/data'
 import UserInfoBar from '@/components/UserInfoBar'
-import ReferencesSection from '@/components/ReferencesSection'
 import WorkExperienceSection from '@/components/WorkExperienceSection'
 import EducationSection from '@/components/EducationSection'
 import ActivitiesSection from '@/components/ActivitiesSection'
 import PortfolioSection from '@/components/PortfolioSection'
+import SkillsSection from '@/components/SkillsSection'
 
 export default function Home() {
   const { state, setters } = useContext(DataContext)
   const {
     user,
-    references,
     workExperience,
     education,
     activities,
     portfolio,
+    skills
   } = state
   const {
     setUser,
-    setReferences,
     setWorkExperience,
     setEducation,
     setActivities,
     setPortfolio,
+    setSkills,
   } = setters
 
   useEffect(() => {
     const payloads = [
       { endpoint: 'user', field: 'user', setter: setUser },
-      { endpoint: 'references', field: 'references', setter: setReferences },
       { endpoint: 'work-experience', field: 'workExperience', setter: setWorkExperience },
       { endpoint: 'education', field: 'education', setter: setEducation },
       { endpoint: 'activities', field: 'activities', setter: setActivities },
       { endpoint: 'portfolio', field: 'portfolio', setter: setPortfolio },
+      { endpoint: 'skills', field: 'skills', setter: setSkills },
     ]
 
     Promise.all(
@@ -47,20 +47,18 @@ export default function Home() {
     )
   }, [
     setUser,
-    setReferences,
     setWorkExperience,
     setEducation,
     setActivities,
     setPortfolio,
+    setSkills,
   ])
 
   return (
-    <div className="mx-8 py-5">
+    <div className="mx-8 py-4">
       <UserInfoBar user={user} setUser={setUser} />
 
       <div>
-        <ReferencesSection references={references} setReferences={setReferences} />
-
         <WorkExperienceSection workExperience={workExperience} setWorkExperience={setWorkExperience} />
 
         <PortfolioSection portfolio={portfolio} setPortfolio={setPortfolio} />
@@ -68,6 +66,8 @@ export default function Home() {
         <EducationSection education={education} setEducation={setEducation} />
 
         <ActivitiesSection activities={activities} setActivities={setActivities} />
+
+        <SkillsSection skills={skills} setSkills={setSkills} />
       </div>
     </div>
   )

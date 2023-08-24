@@ -10,7 +10,7 @@ export default function ItemsList({ items = [] }: ItemsListProps) {
       {items
         .filter(item => item.show)
         .map((item, idx) => (
-          <li key={idx} className="py-px text-slate-500">{item.content}</li>
+          <li key={idx} className="py-px text-slate-600">{item.content}</li>
         ))}
     </ul>
   )

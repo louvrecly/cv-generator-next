@@ -4,7 +4,14 @@ import Linkable from '@/components/Table/Linkable'
 export default function UserInfo({ data }) {
   return (
     <div className="w-full flex flex-wrap justify-stretch items-center gap-x-3">
-      <h1 className="flex-1 text-2xl whitespace-nowrap">{data.name}</h1>
+      <h1 className="flex-1 text-3xl whitespace-nowrap uppercase tracking-widest">
+        {data.name.split(' ').map(word => (
+          <>
+            <span className="text-4xl">{word[0]}</span>
+            <span>{word.slice(1)} </span>
+          </>
+        ))}
+      </h1>
 
       {data.contacts && (
         <ul>
